@@ -125,17 +125,18 @@ header {
     font-family: var(--font-heading);
     font-weight: 600;
     font-size: 0.875rem;
-    color: var(--bg-primary);
-    background: var(--gold-gradient);
+    color: #000000;
+    background: #FFFFFF;
     padding: 0.6rem 1.5rem;
     border-radius: 9999px;
     transition: var(--transition-smooth);
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
 }
 
 .header-cta:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+    background: #E5E5E5;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
 }
 
 /* Hero Section */
@@ -146,7 +147,7 @@ header {
     min-height: 85vh;
     display: flex;
     align-items: center;
-    background: radial-gradient(circle at 75% 30%, rgba(212, 175, 55, 0.08) 0%, rgba(0, 0, 0, 0) 60%);
+    background: radial-gradient(circle at 75% 30%, rgba(255, 255, 255, 0.04) 0%, rgba(0, 0, 0, 0) 60%);
 }
 
 .hero-grid {
@@ -205,9 +206,7 @@ header {
 }
 
 .hero-title span.gradient-text {
-    background: var(--gold-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--text-primary);
 }
 
 .hero-description {
@@ -310,8 +309,8 @@ header {
 }
 
 .size-pill.active {
-    background: var(--gold-gradient);
-    color: var(--bg-primary);
+    background: #FFFFFF;
+    color: #000000;
     border-color: transparent;
     transform: scale(1.08);
 }
@@ -337,16 +336,17 @@ header {
     font-family: var(--font-heading);
     font-weight: 700;
     font-size: 1.0625rem;
-    color: var(--bg-primary);
-    background: var(--gold-gradient);
+    color: #000000;
+    background: #FFFFFF;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
     transition: var(--transition-smooth);
 }
 
 .cta-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
+    background: #E5E5E5;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
 }
 
 .cta-button svg {
@@ -498,9 +498,7 @@ header {
     font-family: var(--font-heading);
     font-size: 2.25rem;
     font-weight: 700;
-    background: var(--gold-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--text-primary);
 }
 
 .trust-label {
@@ -757,7 +755,7 @@ table.comparison-table {
 }
 
 .comparison-table tr.highlighted-row {
-    background: rgba(212, 175, 55, 0.02);
+    background: rgba(255, 255, 255, 0.02);
 }
 
 .comparison-table tr:last-child th, .comparison-table tr:last-child td {
@@ -1055,11 +1053,11 @@ footer {
     font-family: var(--font-heading);
     font-weight: 700;
     font-size: 0.875rem;
-    color: var(--bg-primary);
-    background: var(--gold-gradient);
+    color: #000000;
+    background: #FFFFFF;
     padding: 0.6rem 1.25rem;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
 }
 
 /* Responsive Breakpoints */
