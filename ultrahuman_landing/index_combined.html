@@ -1,0 +1,1931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The lightest smart ring on earth. Track sleep, recovery, and movement with no monthly subscription. Fighter-jet grade titanium design with zero sensor bumps. Red Dot Design winner.">
+    <meta name="keywords" content="Ultrahuman, Ring AIR, smart ring, sleep tracker, health wearable, titanium ring, no subscription, Oura alternative">
+    <meta name="author" content="Ultrahuman Freelance Outreach Project">
+    <title>Ultrahuman Ring AIR | Lightest Smart Ring on Earth</title>
+    
+    <!-- Open Graph Metadata for Social Sharing -->
+    <meta property="og:title" content="Ultrahuman Ring AIR | Engineered for Flow">
+    <meta property="og:description" content="Aircraft-grade titanium smart ring with zero monthly subscriptions. The ultimate sleep and recovery wearable.">
+    <meta property="og:image" content="assets/frames/v1_03.jpg">
+    <meta property="og:type" content="website">
+    
+    <!-- CSS Stylesheet -->
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+/* Brand Design Tokens */
+:root {
+    --bg-primary: #000000;
+    --bg-secondary: #0A0A0A;
+    --bg-tertiary: #141414;
+    --border-color: #222222;
+    --border-color-hover: #333333;
+    
+    /* Bionic Gold Brand Gradient */
+    --gold-primary: #D4AF37;
+    --gold-light: #F3E5AB;
+    --gold-dark: #AA7C11;
+    --gold-gradient: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #AA7C11 100%);
+    
+    /* Text Colors */
+    --text-primary: #FFFFFF;
+    --text-secondary: #A0A0A5;
+    --text-muted: #62626A;
+    
+    /* Technical Highlight Colors */
+    --neon-green: #0EFF27;
+    --neon-red: #FF3B30;
+    --neon-green-glow: rgba(14, 255, 39, 0.15);
+    
+    /* Fonts */
+    --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-body: 'Inter', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+    --container-max-width: 1200px;
+    --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Reset and Global Styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--bg-tertiary);
+    border-radius: 4px;
+    border: 2px solid var(--bg-primary);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+}
+
+/* Utility Layouts */
+.container {
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Header & Navigation */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.logo-icon {
+    width: 24px;
+    height: 24px;
+    fill: url(#goldGradient);
+}
+
+.logo-text {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.header-cta {
+    text-decoration: none;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: var(--bg-primary);
+    background: var(--gold-gradient);
+    padding: 0.6rem 1.5rem;
+    border-radius: 9999px;
+    transition: var(--transition-smooth);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+}
+
+.header-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    padding-top: 140px;
+    padding-bottom: 80px;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(circle at 75% 30%, rgba(212, 175, 55, 0.08) 0%, rgba(0, 0, 0, 0) 60%);
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Badges */
+.badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.4rem 1rem;
+    border-radius: 9999px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+}
+
+.badge.gold {
+    border-color: var(--gold-primary);
+    color: var(--gold-light);
+}
+
+.badge svg {
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
+}
+
+/* Dynamic Headline */
+.hero-title {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+}
+
+.hero-title span.gradient-text {
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-description {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    max-width: 520px;
+}
+
+/* Primary Form & Checkout Action Near Top */
+.hero-checkout-widget {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 1.75rem;
+    margin-top: 1rem;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: var(--transition-smooth);
+}
+
+.hero-checkout-widget:hover {
+    border-color: var(--border-color-hover);
+}
+
+.widget-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.widget-price {
+    display: flex;
+    flex-direction: column;
+}
+
+.price-now {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.price-sub {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.price-badge {
+    background: rgba(14, 255, 39, 0.1);
+    color: var(--neon-green);
+    border: 1px solid rgba(14, 255, 39, 0.2);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+}
+
+.sizing-selector {
+    margin-bottom: 1.25rem;
+}
+
+.sizing-title {
+    font-size: 0.8125rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sizing-title span.kit-highlight {
+    color: var(--gold-light);
+    font-weight: 600;
+}
+
+.size-pills {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.size-pill {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.size-pill:hover {
+    border-color: var(--text-secondary);
+}
+
+.size-pill.active {
+    background: var(--gold-gradient);
+    color: var(--bg-primary);
+    border-color: transparent;
+    transform: scale(1.08);
+}
+
+.size-pill.kit-pill {
+    width: auto;
+    height: 38px;
+    border-radius: 9999px;
+    padding: 0 1rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.cta-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.0625rem;
+    color: var(--bg-primary);
+    background: var(--gold-gradient);
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    transition: var(--transition-smooth);
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
+}
+
+.cta-button svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
+.checkout-guarantee {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 0.8rem;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.checkout-guarantee span {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.checkout-guarantee svg {
+    width: 12px;
+    height: 12px;
+    fill: currentColor;
+}
+
+/* Hero Media Display (Dynamic Ad Bridge) */
+.hero-media-container {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    aspect-ratio: 9 / 16;
+    max-height: 580px;
+    justify-self: center;
+    width: 100%;
+    max-width: 326px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+    background: var(--bg-secondary);
+}
+
+.hero-video-player {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    pointer-events: auto;
+}
+
+.media-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,0.6) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    pointer-events: none;
+}
+
+.overlay-badge {
+    align-self: flex-start;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: var(--text-primary);
+    font-size: 0.75rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 99px;
+    font-weight: 500;
+}
+
+.overlay-caption {
+    pointer-events: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.caption-title {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.play-toggle-btn {
+    background: rgba(0,0,0,0.6);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: var(--transition-smooth);
+    margin-bottom: 0.5rem;
+    align-self: flex-end;
+}
+
+.play-toggle-btn:hover {
+    background: var(--text-primary);
+    color: var(--bg-primary);
+    transform: scale(1.05);
+}
+
+.play-toggle-btn svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    margin-left: 2px;
+}
+
+/* Trust Signals Section */
+.trust-signals {
+    padding: 3rem 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+}
+
+.trust-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.trust-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.trust-number {
+    font-family: var(--font-heading);
+    font-size: 2.25rem;
+    font-weight: 700;
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.trust-label {
+    font-size: 0.8125rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+
+/* Key Features (Product Specifications & Design Details) */
+.features-section {
+    padding: 100px 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.section-tag {
+    font-family: var(--font-heading);
+    font-size: 0.8125rem;
+    color: var(--gold-primary);
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.feature-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2.5rem;
+    transition: var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--border-color-hover);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.feature-icon-wrapper {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold-primary);
+}
+
+.feature-icon-wrapper svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+.feature-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.375rem;
+    font-weight: 600;
+}
+
+.feature-card p {
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.specs-list {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 1rem;
+}
+
+.spec-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+}
+
+.spec-label {
+    color: var(--text-muted);
+}
+
+.spec-val {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Sub-features: Hardware Sensoring Detail Showcase */
+.spec-highlight-block {
+    display: grid;
+    grid-template-columns: 1.12fr 0.88fr;
+    gap: 4rem;
+    align-items: center;
+    margin-top: 6rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 4rem;
+}
+
+.spec-highlight-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sensor-row {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: 0.5rem;
+}
+
+.sensor-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.sensor-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 0.4rem;
+    flex-shrink: 0;
+}
+
+.sensor-indicator.green {
+    background: var(--neon-green);
+    box-shadow: 0 0 10px var(--neon-green);
+    animation: pulseGlowGreen 2s infinite;
+}
+
+.sensor-indicator.red {
+    background: var(--neon-red);
+    box-shadow: 0 0 10px var(--neon-red);
+    animation: pulseGlowRed 2s infinite;
+}
+
+.sensor-details h4 {
+    font-family: var(--font-heading);
+    font-size: 1.0625rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.sensor-details p {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.spec-highlight-image-wrapper {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    aspect-ratio: 1 / 1;
+}
+
+.spec-highlight-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Animations for Sensors */
+@keyframes pulseGlowGreen {
+    0% { transform: scale(0.9); opacity: 0.7; box-shadow: 0 0 4px var(--neon-green); }
+    50% { transform: scale(1.15); opacity: 1; box-shadow: 0 0 12px var(--neon-green); }
+    100% { transform: scale(0.9); opacity: 0.7; box-shadow: 0 0 4px var(--neon-green); }
+}
+
+@keyframes pulseGlowRed {
+    0% { transform: scale(0.9); opacity: 0.7; box-shadow: 0 0 4px var(--neon-red); }
+    50% { transform: scale(1.15); opacity: 1; box-shadow: 0 0 12px var(--neon-red); }
+    100% { transform: scale(0.9); opacity: 0.7; box-shadow: 0 0 4px var(--neon-red); }
+}
+
+/* Competitor Comparison Section */
+.comparison-section {
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 100px 0;
+}
+
+.comparison-wrapper {
+    overflow-x: auto;
+    margin-top: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    background: var(--bg-primary);
+}
+
+table.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    min-width: 600px;
+}
+
+.comparison-table th, .comparison-table td {
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.comparison-table th {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+}
+
+.comparison-table th.brand-col {
+    color: var(--text-primary);
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.comparison-table td.feature-name {
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.comparison-table tr.highlighted-row {
+    background: rgba(212, 175, 55, 0.02);
+}
+
+.comparison-table tr:last-child th, .comparison-table tr:last-child td {
+    border-bottom: none;
+}
+
+.text-gold {
+    color: var(--gold-light);
+    font-weight: 600;
+}
+
+.check-icon {
+    color: var(--neon-green);
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.cross-icon {
+    color: var(--text-muted);
+}
+
+/* Sizing Process Section */
+.sizing-kit-section {
+    padding: 100px 0;
+}
+
+.sizing-kit-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.sizing-kit-image-wrapper {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    aspect-ratio: 16 / 9;
+}
+
+.sizing-kit-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sizing-kit-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.steps-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.step-card {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.step-num {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--gold-primary);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.step-info h4 {
+    font-family: var(--font-heading);
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.step-info p {
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+}
+
+/* FAQ Section */
+.faq-section {
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+    padding: 100px 0;
+}
+
+.faq-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.faq-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: var(--transition-smooth);
+}
+
+.faq-card:hover {
+    border-color: var(--border-color-hover);
+}
+
+.faq-question-btn {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    text-align: left;
+    color: var(--text-primary);
+    font-family: var(--font-heading);
+    font-size: 1.0625rem;
+    font-weight: 600;
+    transition: var(--transition-smooth);
+}
+
+.faq-question-btn svg {
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-card.open .faq-question-btn svg {
+    transform: rotate(180deg);
+    color: var(--gold-primary);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-answer-inner {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    border-top: 1px solid rgba(255, 255, 255, 0.02);
+    padding-top: 1rem;
+}
+
+/* Footer Section */
+footer {
+    border-top: 1px solid var(--border-color);
+    padding: 4rem 0 2rem 0;
+    background: var(--bg-primary);
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.footer-info {
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-tagline {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.footer-links-group {
+    display: flex;
+    gap: 4rem;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-col h5 {
+    font-family: var(--font-heading);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+}
+
+.footer-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.footer-col a {
+    text-decoration: none;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    transition: var(--transition-smooth);
+}
+
+.footer-col a:hover {
+    color: var(--gold-light);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-bottom-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    transition: var(--transition-smooth);
+}
+
+.footer-bottom-links a:hover {
+    color: var(--text-secondary);
+}
+
+/* Floating Sizing CTA for Mobile Devices */
+.mobile-sticky-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: rgba(10, 10, 10, 0.9);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-top: 1px solid var(--border-color);
+    padding: 0.75rem 1.5rem;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.sticky-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.sticky-title {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.sticky-price {
+    font-family: var(--font-heading);
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.sticky-cta {
+    text-decoration: none;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: var(--bg-primary);
+    background: var(--gold-gradient);
+    padding: 0.6rem 1.25rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+    
+    .hero-content {
+        align-items: center;
+    }
+    
+    .hero-description {
+        margin: 0 auto;
+    }
+    
+    .hero-checkout-widget {
+        margin: 1rem auto 0 auto;
+        width: 100%;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .spec-highlight-block {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 3rem;
+    }
+    
+    .sizing-kit-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .sizing-kit-image-wrapper {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+    
+    .container {
+        padding: 0 1.5rem;
+    }
+    
+    .hero-title {
+        font-size: 2.75rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .mobile-sticky-bar {
+        display: flex;
+    }
+    
+    body {
+        padding-bottom: 60px;
+    }
+    
+    .footer-links-group {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2.25rem;
+    }
+    
+    .price-now {
+        font-size: 1.75rem;
+    }
+    
+    .size-pills {
+        justify-content: center;
+    }
+    
+    .footer-links-group {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+</style>
+    
+    <!-- SVG Defs for Gradients and Shared Icons -->
+    <svg style="display: none;">
+        <defs>
+            <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#F3E5AB" />
+                <stop offset="50%" stop-color="#D4AF37" />
+                <stop offset="100%" stop-color="#AA7C11" />
+            </linearGradient>
+        </defs>
+    </svg>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo-wrapper" id="nav-logo">
+                <!-- SVG Vector Logo for Ultrahuman Brand Style -->
+                <svg class="logo-icon" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                </svg>
+                <span class="logo-text">Ultrahuman</span>
+            </a>
+            <a href="#checkout-widget" class="header-cta" id="header-cta-btn">Order Now</a>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="hero" id="hero-section">
+            <div class="container hero-grid">
+                
+                <!-- Hero Content Side -->
+                <div class="hero-content">
+                    <div class="badge-container" id="badge-container">
+                        <!-- Filled in dynamically by script.js -->
+                        <div class="badge gold">
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <span>Red Dot Winner</span>
+                        </div>
+                        <div class="badge">
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <span>No Subscription</span>
+                        </div>
+                    </div>
+                    
+                    <h1 class="hero-title" id="hero-title">
+                        Lightest Smart Ring. <span class="gradient-text">Zero Monthly Subscriptions.</span>
+                    </h1>
+                    
+                    <p class="hero-description" id="hero-description">
+                        Track sleep, recovery, and movement with aircraft-grade titanium. The Red Dot Award-winning design features a hypoallergenic inner lining with zero sensor bumps.
+                    </p>
+
+                    <!-- Interactive Checkout Widget (Conversion Maximizer) -->
+                    <div class="hero-checkout-widget" id="checkout-widget">
+                        <div class="widget-row">
+                            <div class="widget-price">
+                                <span class="price-now">$349</span>
+                                <span class="price-sub">One-time purchase • Lifetime access</span>
+                            </div>
+                            <span class="price-badge">Free Sizing Kit Included</span>
+                        </div>
+                        
+                        <!-- Size Selection pills -->
+                        <div class="sizing-selector">
+                            <div class="sizing-title">
+                                <span>Choose Ring Size (US)</span>
+                                <span class="kit-highlight">Unsure? Choose Sizing Kit</span>
+                            </div>
+                            <div class="size-pills">
+                                <button class="size-pill" data-size="6">6</button>
+                                <button class="size-pill" data-size="7">7</button>
+                                <button class="size-pill" data-size="8">8</button>
+                                <button class="size-pill" data-size="9">9</button>
+                                <button class="size-pill" data-size="10">10</button>
+                                <button class="size-pill" data-size="11">11</button>
+                                <button class="size-pill" data-size="12">12</button>
+                                <button class="size-pill kit-pill" data-size="kit">Free Sizing Kit</button>
+                            </div>
+                        </div>
+
+                        <!-- CTA Button -->
+                        <button class="cta-button" id="add-to-cart-btn">
+                            <span>Select Your Size Above</span>
+                            <svg viewBox="0 0 24 24">
+                                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                            </svg>
+                        </button>
+                        
+                        <!-- Mini Interactive Label for active selected size -->
+                        <div class="checkout-guarantee" id="checkout-guarantee">
+                            <span>
+                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                                <span id="active-size-text">Select size or get the free kit first</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hero Media/Video Container (Ad-to-Page Bridge) -->
+                <div class="hero-media-container" id="hero-media-container">
+                    <video class="hero-video-player" id="hero-video" loop playsinline muted preload="metadata">
+                        <source src="assets/video2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    
+                    <div class="media-overlay">
+                        <span class="overlay-badge" id="video-source-badge">Active Ad Highlight</span>
+                        <div class="overlay-caption">
+                            <button class="play-toggle-btn" id="play-toggle-btn" aria-label="Toggle Play State">
+                                <svg id="play-icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                <svg id="pause-icon" viewBox="0 0 24 24" style="display: none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                            </button>
+                            <span class="caption-title" id="video-caption-title">Ultrahuman Ring AIR</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Trust Signals / Stats Grid -->
+        <section class="trust-signals" id="trust-signals">
+            <div class="container trust-flex">
+                <div class="trust-item">
+                    <span class="trust-number">2.4g</span>
+                    <span class="trust-label">World's Lightest Design</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-number">Red Dot</span>
+                    <span class="trust-label">Product Design Award</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-number">6 Days</span>
+                    <span class="trust-label">Continuous Battery Life</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-number">$0</span>
+                    <span class="trust-label">Subscription Fees Forever</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Specifications / Features Section -->
+        <section class="features-section" id="specifications">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Specifications</span>
+                    <h2 class="section-title">Minimalist Form. Maximalist Tech.</h2>
+                </div>
+                
+                <div class="features-grid">
+                    <!-- Feature Card 1 -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <svg viewBox="0 0 24 24"><path d="M12 22C6.48 22 2 17.52 2 12S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm-1-17.93c-3.95.49-7 3.85-7 7.93 0 4.42 3.58 8 8 8 4.08 0 7.44-3.05 7.93-7H11V4.07z"/></svg>
+                        </div>
+                        <h3>Ultra-Thin Profile</h3>
+                        <p>At only 2.4mm thick and 8.1mm wide, the Ring AIR is virtually imperceptible on your hand, making it the most comfortable health tracker for 24/7 wear.</p>
+                        <div class="specs-list">
+                            <div class="spec-item"><span class="spec-label">Thickness</span><span class="spec-val">2.4mm - 2.8mm</span></div>
+                            <div class="spec-item"><span class="spec-label">Width</span><span class="spec-val">8.1mm</span></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Feature Card 2 -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-10-4zm0 2.18l7 2.8v4.91c0 4.19-2.88 8.07-7 9.11-4.12-1.04-7-4.92-7-9.11V5.98l7-2.8z"/></svg>
+                        </div>
+                        <h3>Indestructible Shell</h3>
+                        <p>Forged with fighter-jet grade Titanium shell and reinforced with a Tungsten Carbide Carbon coating, providing extreme scratch resistance for daily active wear.</p>
+                        <div class="specs-list">
+                            <div class="spec-item"><span class="spec-label">Material</span><span class="spec-val">Fighter-Jet Titanium</span></div>
+                            <div class="spec-item"><span class="spec-label">Coating</span><span class="spec-val">Tungsten Carbide Carbon</span></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Feature Card 3 -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <svg viewBox="0 0 24 24"><path d="M19.03 3.56c-.39-.39-1.02-.39-1.41 0L15.9 5.28c-.39.39-.39 1.02 0 1.41l1.72 1.72-8.59 8.59-1.72-1.72c-.39-.39-1.02-.39-1.41 0l-1.72 1.72c-.39.39-.39 1.02 0 1.41l3.44 3.44c.39.39 1.02.39 1.41 0l11.45-11.45c.39-.39.39-1.02 0-1.41l-1.72-1.72z"/></svg>
+                        </div>
+                        <h3>Waterproof to 100m</h3>
+                        <p>Take it anywhere. The Ring AIR is fully sealed with hypoallergenic medical-grade epoxy resin. Certified waterproof up to 10 ATM (100 meters).</p>
+                        <div class="specs-list">
+                            <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-val">10 ATM (100m / 330ft)</span></div>
+                            <div class="spec-item"><span class="spec-label">Inner Lining</span><span class="spec-val">Medical Epoxy Resin</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sensoring Detail Showcase Block -->
+                <div class="spec-highlight-block" id="sensoring-showcase">
+                    <div class="spec-highlight-content">
+                        <span class="section-tag">Internal Sensors</span>
+                        <h3 class="section-title">Continuous Medical-Grade Tracking</h3>
+                        <p>Packed with advanced clinical-grade sensors in a smooth, bump-free inner shell. It reads health markers directly from the blood vessels on the inside of your finger, bypassing surface noise.</p>
+                        
+                        <div class="sensor-row">
+                            <div class="sensor-item">
+                                <span class="sensor-indicator green"></span>
+                                <div class="sensor-details">
+                                    <h4>Multi-Wavelength PPG Sensors</h4>
+                                    <p>Uses infrared, red, and green LEDs to monitor continuous heart rate, heart rate variability (HRV), blood oxygen saturation (SpO2), and circulation patterns.</p>
+                                </div>
+                            </div>
+                            <div class="sensor-item">
+                                <span class="sensor-indicator red"></span>
+                                <div class="sensor-details">
+                                    <h4>Non-Contact Skin Temperature</h4>
+                                    <p>Monitors circadian phases, body temperature fluctuations, and early signs of immune response or fever with 0.1°C accuracy.</p>
+                                </div>
+                            </div>
+                            <div class="sensor-item">
+                                <span class="sensor-indicator green"></span>
+                                <div class="sensor-details">
+                                    <h4>6-Axis Motion Sensor & Accelerometer</h4>
+                                    <p>Tracks step counts, workout zones, activity duration, metabolic burn rate, and sleep state transitions silently.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spec-highlight-image-wrapper">
+                        <!-- Displays close-up of internal circuit dynamically aligned with the video UTM source -->
+                        <img src="assets/frames/v2_09.jpg" alt="Ultrahuman Ring AIR internal circuitry and sensors close-up" id="spec-highlight-image">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Competitor Comparison Table (Maximizes Cart Addition by addressing friction) -->
+        <section class="comparison-section" id="comparison">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">The Smart Choice</span>
+                    <h2 class="section-title">Ultrahuman vs. The Rest</h2>
+                </div>
+                
+                <div class="comparison-wrapper">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th class="brand-col text-gold">Ultrahuman Ring AIR</th>
+                                <th>Oura Ring Gen 3</th>
+                                <th>Whoop 4.0</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="highlighted-row">
+                                <td class="feature-name">Monthly Subscription</td>
+                                <td class="text-gold check-icon">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                    $0 Free Forever
+                                </td>
+                                <td>$5.99 / month</td>
+                                <td>$30 / month</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Weight</td>
+                                <td class="text-gold">2.4 - 3.6g (Lightest)</td>
+                                <td>4.0 - 6.0g</td>
+                                <td>~30g (Wrist Strap)</td>
+                            </tr>
+                            <tr class="highlighted-row">
+                                <td class="feature-name">Inner Sensor Surface</td>
+                                <td class="text-gold check-icon">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                    Zero Bumps (Smooth)
+                                </td>
+                                <td>3 Sensor bumps</td>
+                                <td>Flat (sensor block)</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Shell Material</td>
+                                <td>Fighter-Jet Titanium</td>
+                                <td>Titanium</td>
+                                <td>Plastic / Metal Alloy</td>
+                            </tr>
+                            <tr class="highlighted-row">
+                                <td class="feature-name">Water Resistance</td>
+                                <td>10 ATM (100 meters)</td>
+                                <td>10 ATM (100 meters)</td>
+                                <td>IP68 (10 meters)</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Battery Life</td>
+                                <td>Up to 6 Days</td>
+                                <td>Up to 7 Days</td>
+                                <td>Up to 5 Days</td>
+                            </tr>
+                            <tr class="highlighted-row">
+                                <td class="feature-name">Free Physical Sizing Kit</td>
+                                <td class="text-gold check-icon">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                    Included ($0)
+                                </td>
+                                <td>Included ($0)</td>
+                                <td class="cross-icon">N/A</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sizing Kit Flow Section -->
+        <section class="sizing-kit-section" id="sizing-kit">
+            <div class="container sizing-kit-grid">
+                <div class="sizing-kit-image-wrapper">
+                    <img src="assets/frames/v2_15.jpg" alt="Ultrahuman physical sizing kit rings showcase" id="sizing-kit-image">
+                </div>
+                
+                <div class="sizing-kit-content">
+                    <span class="section-tag">Perfect Fit Guaranteed</span>
+                    <h2 class="section-title">How The Sizing Process Works</h2>
+                    <p class="hero-description">Smart rings fit differently than normal jewelry. We ship a sizing kit first at no extra charge to ensure your ring sits comfortably for 24/7 continuous health tracking.</p>
+                    
+                    <div class="steps-list">
+                        <!-- Step 1 -->
+                        <div class="step-card">
+                            <span class="step-num">1</span>
+                            <div class="step-info">
+                                <h4>Order Your Sizing Kit</h4>
+                                <p>Select "Free Sizing Kit" when ordering. We ship a kit containing plastic replica rings from size 6 to 12 instantly.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2 -->
+                        <div class="step-card">
+                            <span class="step-num">2</span>
+                            <div class="step-info">
+                                <h4>Wear it for 24 Hours</h4>
+                                <p>Fingers swell slightly during sleep and workouts. Wear your replica ring on your index, middle, or ring finger for a full day to check comfort.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3 -->
+                        <div class="step-card">
+                            <span class="step-num">3</span>
+                            <div class="step-info">
+                                <h4>Confirm and Ship</h4>
+                                <p>Submit your preferred size using the link sent to your email or directly in the Ultrahuman App. Your custom Gold Ring AIR is dispatched immediately.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accordion FAQ Section -->
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">FAQ</span>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                </div>
+                
+                <div class="faq-wrapper">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-card">
+                        <button class="faq-question-btn">
+                            <span>How do I choose my ring size?</span>
+                            <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                We recommend ordering the **Free Sizing Kit** first. Once it arrives, test the plastic ring sizes. We suggest wearing the ring on your index, middle, or ring finger. It should fit snugly but slide off over your knuckle without excessive resistance.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-card">
+                        <button class="faq-question-btn">
+                            <span>Is there a monthly subscription fee for the app?</span>
+                            <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                No. The Ultrahuman Ring AIR is a **one-time purchase**. All sleep tracking details, body temperature logs, movement indexes, circadian guidance, and app updates are completely free forever.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-card">
+                        <button class="faq-question-btn">
+                            <span>What parameters does the ring monitor?</span>
+                            <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                The ring tracks your Sleep Index (duration, efficiency, cycles, restorative sleep percentage), Movement Index (active hours, workouts, metabolic calorie burn), Skin Temperature, and HRV (Heart Rate Variability), providing recovery prompts and circadian rhythm advice.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-card">
+                        <button class="faq-question-btn">
+                            <span>Is it waterproof? Can I swim or bathe with it?</span>
+                            <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                Yes. The ring is fully sealed in hypoallergenic medical-grade epoxy resin and is rated for **10 ATM water resistance**. You can safely wear it while washing hands, showering, swimming, or diving up to 100 meters.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Mobile Sticky Buy Bar (Maximizes Cart Additions) -->
+    <div class="mobile-sticky-bar">
+        <div class="sticky-info">
+            <span class="sticky-title">Ultrahuman Ring AIR</span>
+            <span class="sticky-price">$349</span>
+        </div>
+        <a href="#checkout-widget" class="sticky-cta" id="sticky-cta">Choose Size</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="#" class="logo-wrapper">
+                        <svg class="logo-icon" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                        </svg>
+                        <span class="logo-text">Ultrahuman</span>
+                    </a>
+                    <p class="footer-tagline">Advanced metabolic health and bio-monitoring wearables designed to optimize human performance. Zero subscriptions.</p>
+                </div>
+                
+                <div class="footer-links-group">
+                    <div class="footer-col">
+                        <h5>Product</h5>
+                        <ul>
+                            <li><a href="#specifications">Specifications</a></li>
+                            <li><a href="#sensoring-showcase">Sensors</a></li>
+                            <li><a href="#comparison">Comparison Matrix</a></li>
+                            <li><a href="#sizing-kit">Sizing Process</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Brand Information</h5>
+                        <ul>
+                            <li><a href="#">Official Website</a></li>
+                            <li><a href="#">Support Center</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ultrahuman Healthcare Pvt. Ltd. Custom static marketing demonstration page built for Outreach purpose.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Security</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vanilla Javascript Logic -->
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Dynamic Content Customization based on UTM / Query Params
+    const urlParams = new URLSearchParams(window.location.search);
+    const videoParam = urlParams.get('v') || urlParams.get('utm_video') || urlParams.get('ref');
+
+    // DOM Elements to personalize
+    const heroTitle = document.getElementById('hero-title');
+    const heroDescription = document.getElementById('hero-description');
+    const heroVideo = document.getElementById('hero-video');
+    const videoCaptionTitle = document.getElementById('video-caption-title');
+    const badgeContainer = document.getElementById('badge-container');
+    const specHighlightImage = document.getElementById('spec-highlight-image');
+
+    // Default configuration (Fallback)
+    let config = {
+        title: 'Lightest Smart Ring. <span class="gradient-text">Zero Monthly Subscriptions.</span>',
+        description: 'Track sleep, recovery, and movement with aircraft-grade titanium. The Red Dot Award-winning design features hypoallergenic inner lining with zero sensor bumps.',
+        videoSrc: 'assets/video2.mp4',
+        posterSrc: 'assets/frames/v2_03.jpg',
+        caption: 'Ultrahuman Ring AIR - Bionic Gold Edition',
+        specHighlightImg: 'assets/frames/v2_15.jpg',
+        badges: [
+            { text: 'Red Dot Winner', icon: 'award' },
+            { text: 'No Subscription', icon: 'check' },
+            { text: 'Sizing Kit Included', icon: 'box' }
+        ]
+    };
+
+    // Video 1 Custom Configuration (Cinematic: Zero Bumps / Comfort / Flow)
+    if (videoParam === '1' || videoParam === 'cinematic') {
+        config = {
+            title: 'Engineered for Flow. <span class="gradient-text">Zero Bumps.</span> Ultimate Comfort.',
+            description: 'Crafted with fighter-jet grade titanium and a smooth hypoallergenic resin lining, free of intrusive sensor bumps. Engineered to monitor sleep, restorative sleep, and heart rate drop seamlessly.',
+            videoSrc: 'assets/video1.mp4',
+            posterSrc: 'assets/frames/v1_03.jpg',
+            caption: 'Cinematic Spotlight: Zero-Bump Fluid Comfort',
+            specHighlightImg: 'assets/frames/v1_13.jpg',
+            badges: [
+                { text: 'Zero Bumps', icon: 'sparkles' },
+                { text: 'Fighter-Jet Titanium', icon: 'shield' },
+                { text: 'Ergonomic Excellence', icon: 'award' }
+            ]
+        };
+    } 
+    // Video 2 Custom Configuration (UGC: Sleep, Recovery & No Subscription)
+    else if (videoParam === '2' || videoParam === 'ugc') {
+        config = {
+            title: 'Track Sleep, Recovery & Movement. <span class="gradient-text">Zero Subscriptions.</span>',
+            description: 'Ditch monthly fees forever. Monitor sleep cycles, movement, and temperature beautifully. Order today and receive a free physical sizing kit to guarantee a perfect fit.',
+            videoSrc: 'assets/video2.mp4',
+            posterSrc: 'assets/frames/v2_03.jpg',
+            caption: 'UGC Review: Zero Subscription Health Tracker',
+            specHighlightImg: 'assets/frames/v2_09.jpg',
+            badges: [
+                { text: 'Zero Subscription', icon: 'check' },
+                { text: 'Free Sizing Kit', icon: 'box' },
+                { text: 'Lightweight (2.4g)', icon: 'feather' }
+            ]
+        };
+    }
+
+    // Apply configuration to DOM
+    if (heroTitle) heroTitle.innerHTML = config.title;
+    if (heroDescription) heroDescription.textContent = config.description;
+    
+    if (heroVideo) {
+        heroVideo.setAttribute('poster', config.posterSrc);
+        heroVideo.src = config.videoSrc;
+        heroVideo.load();
+    }
+    
+    if (videoCaptionTitle) videoCaptionTitle.textContent = config.caption;
+    if (specHighlightImage) specHighlightImage.src = config.specHighlightImg;
+
+    // Apply Badges
+    if (badgeContainer) {
+        badgeContainer.innerHTML = '';
+        config.badges.forEach(b => {
+            const badgeEl = document.createElement('div');
+            badgeEl.className = 'badge';
+            if (b.text === 'Zero Bumps' || b.text === 'Zero Subscription' || b.text === 'Red Dot Winner') {
+                badgeEl.classList.add('gold');
+            }
+            
+            // Inline SVG select depending on icon type
+            let svgIcon = '';
+            if (b.icon === 'award') {
+                svgIcon = `<svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>`;
+            } else if (b.icon === 'check') {
+                svgIcon = `<svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>`;
+            } else if (b.icon === 'box') {
+                svgIcon = `<svg viewBox="0 0 24 24"><path d="M22 3.41L16.75 8.66 12 3.91l-4.75 4.75L2 3.41V20l10 3.5 10-3.5V3.41zM12 6.74l3 3-3 3-3-3 3-3zM4 6.27l6.5 6.5V20.8L4 18.5V6.27zm16 12.23l-6.5 2.3v-8.03l6.5-6.5v12.23z"/></svg>`;
+            } else if (b.icon === 'shield') {
+                svgIcon = `<svg viewBox="0 0 24 24"><path d="M12 2L2 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-10-3z"/></svg>`;
+            } else if (b.icon === 'feather') {
+                svgIcon = `<svg viewBox="0 0 24 24"><path d="M21.2 3.4c-.6-.6-1.5-.6-2.1 0L10.3 12.2c-.3.3-.5.7-.6 1.1l-.8 3c-.1.3 0 .7.3.9.2.2.5.3.8.3.1 0 .2 0 .3-.1l3-.8c.4-.1.8-.3 1.1-.6l8.8-8.8c.6-.6.6-1.5 0-2.1l-1.7-1.7zm-8.8 9.5l6.4-6.4 1.1 1.1-6.4 6.4-1.1-1.1z"/></svg>`;
+            } else if (b.icon === 'sparkles') {
+                svgIcon = `<svg viewBox="0 0 24 24"><path d="M9 12.27l2.1-4.27 4.27-2.1-4.27-2.1L9 1.63 6.9 5.9 2.63 8l4.27 2.1L9 12.27zm8.5 7.1l1.05-2.13 2.13-1.05-2.13-1.05-1.05-2.13-1.05 2.13-2.13 1.05 2.13 1.05 1.05 2.13zM6 19.37l.7-1.4 1.4-.7-1.4-.7-.7-1.4-.7 1.4-1.4.7 1.4.7.7 1.4z"/></svg>`;
+            }
+            
+            badgeEl.innerHTML = `${svgIcon} <span>${b.text}</span>`;
+            badgeContainer.appendChild(badgeEl);
+        });
+    }
+
+    // 2. Custom Video Player Logic (Autoplay Muted + Tap to Unmute / Play Control)
+    const playToggleBtn = document.getElementById('play-toggle-btn');
+    const playIcon = document.getElementById('play-icon');
+    const pauseIcon = document.getElementById('pause-icon');
+
+    if (heroVideo) {
+        // Initial setup for quick loading and background autoplay capability
+        heroVideo.muted = true;
+        heroVideo.setAttribute('playsinline', '');
+        
+        // Attempt autoplay
+        heroVideo.play().catch(e => {
+            console.log('Autoplay was blocked by browser. Ready for user click.');
+        });
+
+        // Toggle state function
+        const toggleVideoState = () => {
+            if (heroVideo.paused) {
+                heroVideo.play();
+                playIcon.style.display = 'none';
+                pauseIcon.style.display = 'block';
+            } else {
+                heroVideo.pause();
+                playIcon.style.display = 'block';
+                pauseIcon.style.display = 'none';
+            }
+        };
+
+        // If player is clicked, toggle play state and unmute
+        if (playToggleBtn) {
+            playToggleBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (heroVideo.muted) {
+                    heroVideo.muted = false;
+                }
+                toggleVideoState();
+            });
+        }
+
+        // Tap on the video frame container also triggers play/pause
+        heroVideo.addEventListener('click', () => {
+            if (heroVideo.muted) {
+                heroVideo.muted = false;
+            }
+            toggleVideoState();
+        });
+
+        // Sync button icons with actual video playback states
+        heroVideo.addEventListener('play', () => {
+            playIcon.style.display = 'none';
+            pauseIcon.style.display = 'block';
+        });
+
+        heroVideo.addEventListener('pause', () => {
+            playIcon.style.display = 'block';
+            pauseIcon.style.display = 'none';
+        });
+    }
+
+    // 3. Sizing Selection Interaction & Cart URL Mapping (CAR Optimizer)
+    const sizePills = document.querySelectorAll('.size-pill');
+    const addToCartBtn = document.getElementById('add-to-cart-btn');
+    const stickyCta = document.getElementById('sticky-cta');
+    const activeSizeText = document.getElementById('active-size-text');
+    let selectedSize = null;
+
+    // Direct purchasing URL base (Ultrahuman checkout page mock link or direct checkout API integration)
+    const CHECKOUT_BASE_URL = 'https://ultrahuman.com/checkout';
+
+    const updateCheckoutButtonState = () => {
+        if (selectedSize) {
+            if (selectedSize === 'kit') {
+                addToCartBtn.innerHTML = `Order Sizing Kit First <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>`;
+                if (stickyCta) stickyCta.textContent = 'Order Sizing Kit';
+                if (activeSizeText) activeSizeText.innerHTML = 'Selected: <span class="kit-highlight">Free Sizing Kit</span> (Recommended for precise sizing)';
+            } else {
+                addToCartBtn.innerHTML = `Buy Size ${selectedSize} Now <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>`;
+                if (stickyCta) stickyCta.textContent = `Buy Size ${selectedSize}`;
+                if (activeSizeText) activeSizeText.innerHTML = `Selected Size: <strong>US ${selectedSize}</strong>`;
+            }
+        }
+    };
+
+    sizePills.forEach(pill => {
+        pill.addEventListener('click', () => {
+            sizePills.forEach(p => p.classList.remove('active'));
+            pill.classList.add('active');
+            selectedSize = pill.getAttribute('data-size');
+            updateCheckoutButtonState();
+        });
+    });
+
+    if (addToCartBtn) {
+        addToCartBtn.addEventListener('click', () => {
+            let checkoutUrl = '';
+            if (!selectedSize) {
+                // If clicked without picking a size, default to the sizing kit to reduce conversion friction
+                checkoutUrl = `${CHECKOUT_BASE_URL}?product=ring-air&size=kit`;
+                // Pulse the sizing warning or proceed directly to sizing kit checkout
+                window.location.href = checkoutUrl;
+            } else {
+                checkoutUrl = `${CHECKOUT_BASE_URL}?product=ring-air&size=${selectedSize}`;
+                window.location.href = checkoutUrl;
+            }
+        });
+    }
+
+    if (stickyCta) {
+        stickyCta.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (selectedSize) {
+                window.location.href = `${CHECKOUT_BASE_URL}?product=ring-air&size=${selectedSize}`;
+            } else {
+                // Scroll smoothly to checkout widget if no size chosen yet
+                const widget = document.getElementById('checkout-widget');
+                if (widget) {
+                    widget.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
+    }
+
+    // 4. FAQ Accordion Logic
+    const faqCards = document.querySelectorAll('.faq-card');
+
+    faqCards.forEach(card => {
+        const btn = card.querySelector('.faq-question-btn');
+        const answer = card.querySelector('.faq-answer');
+
+        if (btn && answer) {
+            btn.addEventListener('click', () => {
+                const isOpen = card.classList.contains('open');
+                
+                // Close all other FAQs first for clean accordion UI
+                faqCards.forEach(c => {
+                    c.classList.remove('open');
+                    const ans = c.querySelector('.faq-answer');
+                    if (ans) ans.style.maxHeight = '0px';
+                });
+
+                if (!isOpen) {
+                    card.classList.add('open');
+                    // Calculate heights dynamically for height transition animations
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                } else {
+                    card.classList.remove('open');
+                    answer.style.maxHeight = '0px';
+                }
+            });
+        }
+    });
+
+    // 5. Mobile Sticky Buy Bar Scroll Trigger
+    const checkoutWidget = document.getElementById('checkout-widget');
+    const mobileStickyBar = document.querySelector('.mobile-sticky-bar');
+
+    if (checkoutWidget && mobileStickyBar) {
+        window.addEventListener('scroll', () => {
+            const widgetRect = checkoutWidget.getBoundingClientRect();
+            // Show sticky bar only when user has scrolled past the main top checkout widget
+            if (widgetRect.bottom < 0 && window.innerWidth <= 768) {
+                mobileStickyBar.style.display = 'flex';
+            } else {
+                mobileStickyBar.style.display = 'none';
+            }
+        });
+    }
+});
+
+</script>
+</body>
+</html>

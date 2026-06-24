@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The lightest smart ring on earth. Track sleep, recovery, and movement with no monthly subscription. Fighter-jet grade titanium design with zero sensor bumps. Red Dot Design winner.">
+    <meta name="keywords" content="Ultrahuman, Ring AIR, smart ring, sleep tracker, health wearable, titanium ring, no subscription, Oura alternative">
+    <meta name="author" content="Ultrahuman Freelance Outreach Project">
+    <title>Ultrahuman Ring AIR | Lightest Smart Ring on Earth</title>
+    
+    <!-- Open Graph Metadata for Social Sharing -->
+    <meta property="og:title" content="Ultrahuman Ring AIR | Engineered for Flow">
+    <meta property="og:description" content="Aircraft-grade titanium smart ring with zero monthly subscriptions. The ultimate sleep and recovery wearable.">
+    <meta property="og:image" content="assets/frames/v1_03.jpg">
+    <meta property="og:type" content="website">
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- SVG Defs for Gradients and Shared Icons -->
+    <svg style="display: none;">
+        <defs>
+            <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#F3E5AB" />
+                <stop offset="50%" stop-color="#D4AF37" />
+                <stop offset="100%" stop-color="#AA7C11" />
+            </linearGradient>
+        </defs>
+    </svg>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo-wrapper" id="nav-logo">
+                <!-- SVG Vector Logo for Ultrahuman Brand Style -->
+                <svg class="logo-icon" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                </svg>
+                <span class="logo-text">Ultrahuman</span>
+            </a>
+            <a href="#checkout-widget" class="header-cta" id="header-cta-btn">Order Now</a>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="hero" id="hero-section">
+            <div class="container hero-grid">
+                
+                <!-- Hero Content Side -->
+                <div class="hero-content">
+                    <div class="badge-container" id="badge-container">
+                        <!-- Filled in dynamically by script.js -->
+                        <div class="badge gold">
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <span>Red Dot Winner</span>
+                        </div>
+                        <div class="badge">
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <span>No Subscription</span>
+                        </div>
+                    </div>
+                    
+                    <h1 class="hero-title" id="hero-title">
+                        Lightest Smart Ring. <span class="gradient-text">Zero Monthly Subscriptions.</span>
+                    </h1>
+                    
+                    <p class="hero-description" id="hero-description">
+                        Track sleep, recovery, and movement with aircraft-grade titanium. The Red Dot Award-winning design features a hypoallergenic inner lining with zero sensor bumps.
+                    </p>
+
+                    <!-- Interactive Checkout Widget (Conversion Maximizer) -->
+                    <div class="hero-checkout-widget" id="checkout-widget">
+                        <div class="widget-row">
+                            <div class="widget-price">
+                                <span class="price-now">$349</span>
+                                <span class="price-sub">One-time purchase • Lifetime access</span>
+                            </div>
+                            <span class="price-badge">Free Sizing Kit Included</span>
+                        </div>
+                        
+                        <!-- Size Selection pills -->
+                        <div class="sizing-selector">
+                            <div class="sizing-title">
+                                <span>Choose Ring Size (US)</span>
+                                <span class="kit-highlight">Unsure? Choose Sizing Kit</span>
+                            </div>
+                            <div class="size-pills">
+                                <button class="size-pill" data-size="6">6</button>
+                                <button class="size-pill" data-size="7">7</button>
+                                <button class="size-pill" data-size="8">8</button>
+                                <button class="size-pill" data-size="9">9</button>
+                                <button class="size-pill" data-size="10">10</button>
+                                <button class="size-pill" data-size="11">11</button>
+                                <button class="size-pill" data-size="12">12</button>
+                                <button class="size-pill kit-pill" data-size="kit">Free Sizing Kit</button>
+                            </div>
+                        </div>
+
+                        <!-- CTA Button -->
+                        <button class="cta-button" id="add-to-cart-btn">
+                            <span>Select Your Size Above</span>
+                            <svg viewBox="0 0 24 24">
+                                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                            </svg>
+                        </button>
+                        
+                        <!-- Mini Interactive Label for active selected size -->
+                        <div class="checkout-guarantee" id="checkout-guarantee">
+                            <span>
+                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                                <span id="active-size-text">Select size or get the free kit first</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hero Media/Video Container (Ad-to-Page Bridge) -->
+                <div class="hero-media-container" id="hero-media-container">
+                    <video class="hero-video-player" id="hero-video" loop playsinline muted preload="metadata">
+                        <source src="assets/video2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    
+                    <div class="media-overlay">
+                        <span class="overlay-badge" id="video-source-badge">Active Ad Highlight</span>
+                        <div class="overlay-caption">
+                            <button class="play-toggle-btn" id="play-toggle-btn" aria-label="Toggle Play State">
+                                <svg id="play-icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                <svg id="pause-icon" viewBox="0 0 24 24" style="display: none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                            </button>
+                            <span class="caption-title" id="video-caption-title">Ultrahuman Ring AIR</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Trust Signals / Stats Grid -->
+        <section class="trust-signals" id="trust-signals">
+            <div class="container trust-flex">
+                <div class="trust-item">
+                    <span class="trust-number">2.4g</span>
+                    <span class="trust-label">World's Lightest Design</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-number">Red Dot</span>
+                    <span class="trust-label">Product Design Award</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-number">6 Days</span>
+                    <span class="trust-label">Continuous Battery Life</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-number">$0</span>
+                    <span class="trust-label">Subscription Fees Forever</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Specifications / Features Section -->
+        <section class="features-section" id="specifications">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Specifications</span>
+                    <h2 class="section-title">Minimalist Form. Maximalist Tech.</h2>
+                </div>
+                
+                <div class="features-grid">
+                    <!-- Feature Card 1 -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <svg viewBox="0 0 24 24"><path d="M12 22C6.48 22 2 17.52 2 12S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm-1-17.93c-3.95.49-7 3.85-7 7.93 0 4.42 3.58 8 8 8 4.08 0 7.44-3.05 7.93-7H11V4.07z"/></svg>
+                        </div>
+                        <h3>Ultra-Thin Profile</h3>
+                        <p>At only 2.4mm thick and 8.1mm wide, the Ring AIR is virtually imperceptible on your hand, making it the most comfortable health tracker for 24/7 wear.</p>
+                        <div class="specs-list">
+                            <div class="spec-item"><span class="spec-label">Thickness</span><span class="spec-val">2.4mm - 2.8mm</span></div>
+                            <div class="spec-item"><span class="spec-label">Width</span><span class="spec-val">8.1mm</span></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Feature Card 2 -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-10-4zm0 2.18l7 2.8v4.91c0 4.19-2.88 8.07-7 9.11-4.12-1.04-7-4.92-7-9.11V5.98l7-2.8z"/></svg>
+                        </div>
+                        <h3>Indestructible Shell</h3>
+                        <p>Forged with fighter-jet grade Titanium shell and reinforced with a Tungsten Carbide Carbon coating, providing extreme scratch resistance for daily active wear.</p>
+                        <div class="specs-list">
+                            <div class="spec-item"><span class="spec-label">Material</span><span class="spec-val">Fighter-Jet Titanium</span></div>
+                            <div class="spec-item"><span class="spec-label">Coating</span><span class="spec-val">Tungsten Carbide Carbon</span></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Feature Card 3 -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <svg viewBox="0 0 24 24"><path d="M19.03 3.56c-.39-.39-1.02-.39-1.41 0L15.9 5.28c-.39.39-.39 1.02 0 1.41l1.72 1.72-8.59 8.59-1.72-1.72c-.39-.39-1.02-.39-1.41 0l-1.72 1.72c-.39.39-.39 1.02 0 1.41l3.44 3.44c.39.39 1.02.39 1.41 0l11.45-11.45c.39-.39.39-1.02 0-1.41l-1.72-1.72z"/></svg>
+                        </div>
+                        <h3>Waterproof to 100m</h3>
+                        <p>Take it anywhere. The Ring AIR is fully sealed with hypoallergenic medical-grade epoxy resin. Certified waterproof up to 10 ATM (100 meters).</p>
+                        <div class="specs-list">
+                            <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-val">10 ATM (100m / 330ft)</span></div>
+                            <div class="spec-item"><span class="spec-label">Inner Lining</span><span class="spec-val">Medical Epoxy Resin</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sensoring Detail Showcase Block -->
+                <div class="spec-highlight-block" id="sensoring-showcase">
+                    <div class="spec-highlight-content">
+                        <span class="section-tag">Internal Sensors</span>
+                        <h3 class="section-title">Continuous Medical-Grade Tracking</h3>
+                        <p>Packed with advanced clinical-grade sensors in a smooth, bump-free inner shell. It reads health markers directly from the blood vessels on the inside of your finger, bypassing surface noise.</p>
+                        
+                        <div class="sensor-row">
+                            <div class="sensor-item">
+                                <span class="sensor-indicator green"></span>
+                                <div class="sensor-details">
+                                    <h4>Multi-Wavelength PPG Sensors</h4>
+                                    <p>Uses infrared, red, and green LEDs to monitor continuous heart rate, heart rate variability (HRV), blood oxygen saturation (SpO2), and circulation patterns.</p>
+                                </div>
+                            </div>
+                            <div class="sensor-item">
+                                <span class="sensor-indicator red"></span>
+                                <div class="sensor-details">
+                                    <h4>Non-Contact Skin Temperature</h4>
+                                    <p>Monitors circadian phases, body temperature fluctuations, and early signs of immune response or fever with 0.1°C accuracy.</p>
+                                </div>
+                            </div>
+                            <div class="sensor-item">
+                                <span class="sensor-indicator green"></span>
+                                <div class="sensor-details">
+                                    <h4>6-Axis Motion Sensor & Accelerometer</h4>
+                                    <p>Tracks step counts, workout zones, activity duration, metabolic burn rate, and sleep state transitions silently.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spec-highlight-image-wrapper">
+                        <!-- Displays close-up of internal circuit dynamically aligned with the video UTM source -->
+                        <img src="assets/frames/v2_09.jpg" alt="Ultrahuman Ring AIR internal circuitry and sensors close-up" id="spec-highlight-image">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Competitor Comparison Table (Maximizes Cart Addition by addressing friction) -->
+        <section class="comparison-section" id="comparison">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">The Smart Choice</span>
+                    <h2 class="section-title">Ultrahuman vs. The Rest</h2>
+                </div>
+                
+                <div class="comparison-wrapper">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th class="brand-col text-gold">Ultrahuman Ring AIR</th>
+                                <th>Oura Ring Gen 3</th>
+                                <th>Whoop 4.0</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="highlighted-row">
+                                <td class="feature-name">Monthly Subscription</td>
+                                <td class="text-gold check-icon">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                    $0 Free Forever
+                                </td>
+                                <td>$5.99 / month</td>
+                                <td>$30 / month</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Weight</td>
+                                <td class="text-gold">2.4 - 3.6g (Lightest)</td>
+                                <td>4.0 - 6.0g</td>
+                                <td>~30g (Wrist Strap)</td>
+                            </tr>
+                            <tr class="highlighted-row">
+                                <td class="feature-name">Inner Sensor Surface</td>
+                                <td class="text-gold check-icon">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                    Zero Bumps (Smooth)
+                                </td>
+                                <td>3 Sensor bumps</td>
+                                <td>Flat (sensor block)</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Shell Material</td>
+                                <td>Fighter-Jet Titanium</td>
+                                <td>Titanium</td>
+                                <td>Plastic / Metal Alloy</td>
+                            </tr>
+                            <tr class="highlighted-row">
+                                <td class="feature-name">Water Resistance</td>
+                                <td>10 ATM (100 meters)</td>
+                                <td>10 ATM (100 meters)</td>
+                                <td>IP68 (10 meters)</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Battery Life</td>
+                                <td>Up to 6 Days</td>
+                                <td>Up to 7 Days</td>
+                                <td>Up to 5 Days</td>
+                            </tr>
+                            <tr class="highlighted-row">
+                                <td class="feature-name">Free Physical Sizing Kit</td>
+                                <td class="text-gold check-icon">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                    Included ($0)
+                                </td>
+                                <td>Included ($0)</td>
+                                <td class="cross-icon">N/A</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sizing Kit Flow Section -->
+        <section class="sizing-kit-section" id="sizing-kit">
+            <div class="container sizing-kit-grid">
+                <div class="sizing-kit-image-wrapper">
+                    <img src="assets/frames/v2_15.jpg" alt="Ultrahuman physical sizing kit rings showcase" id="sizing-kit-image">
+                </div>
+                
+                <div class="sizing-kit-content">
+                    <span class="section-tag">Perfect Fit Guaranteed</span>
+                    <h2 class="section-title">How The Sizing Process Works</h2>
+                    <p class="hero-description">Smart rings fit differently than normal jewelry. We ship a sizing kit first at no extra charge to ensure your ring sits comfortably for 24/7 continuous health tracking.</p>
+                    
+                    <div class="steps-list">
+                        <!-- Step 1 -->
+                        <div class="step-card">
+                            <span class="step-num">1</span>
+                            <div class="step-info">
+                                <h4>Order Your Sizing Kit</h4>
+                                <p>Select "Free Sizing Kit" when ordering. We ship a kit containing plastic replica rings from size 6 to 12 instantly.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2 -->
+                        <div class="step-card">
+                            <span class="step-num">2</span>
+                            <div class="step-info">
+                                <h4>Wear it for 24 Hours</h4>
+                                <p>Fingers swell slightly during sleep and workouts. Wear your replica ring on your index, middle, or ring finger for a full day to check comfort.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3 -->
+                        <div class="step-card">
+                            <span class="step-num">3</span>
+                            <div class="step-info">
+                                <h4>Confirm and Ship</h4>
+                                <p>Submit your preferred size using the link sent to your email or directly in the Ultrahuman App. Your custom Gold Ring AIR is dispatched immediately.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accordion FAQ Section -->
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">FAQ</span>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                </div>
+                
+                <div class="faq-wrapper">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-card">
+                        <button class="faq-question-btn">
+                            <span>How do I choose my ring size?</span>
+                            <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                We recommend ordering the **Free Sizing Kit** first. Once it arrives, test the plastic ring sizes. We suggest wearing the ring on your index, middle, or ring finger. It should fit snugly but slide off over your knuckle without excessive resistance.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-card">
+                        <button class="faq-question-btn">
+                            <span>Is there a monthly subscription fee for the app?</span>
+                            <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                No. The Ultrahuman Ring AIR is a **one-time purchase**. All sleep tracking details, body temperature logs, movement indexes, circadian guidance, and app updates are completely free forever.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-card">
+                        <button class="faq-question-btn">
+                            <span>What parameters does the ring monitor?</span>
+                            <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                The ring tracks your Sleep Index (duration, efficiency, cycles, restorative sleep percentage), Movement Index (active hours, workouts, metabolic calorie burn), Skin Temperature, and HRV (Heart Rate Variability), providing recovery prompts and circadian rhythm advice.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-card">
+                        <button class="faq-question-btn">
+                            <span>Is it waterproof? Can I swim or bathe with it?</span>
+                            <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                Yes. The ring is fully sealed in hypoallergenic medical-grade epoxy resin and is rated for **10 ATM water resistance**. You can safely wear it while washing hands, showering, swimming, or diving up to 100 meters.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Mobile Sticky Buy Bar (Maximizes Cart Additions) -->
+    <div class="mobile-sticky-bar">
+        <div class="sticky-info">
+            <span class="sticky-title">Ultrahuman Ring AIR</span>
+            <span class="sticky-price">$349</span>
+        </div>
+        <a href="#checkout-widget" class="sticky-cta" id="sticky-cta">Choose Size</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="#" class="logo-wrapper">
+                        <svg class="logo-icon" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                        </svg>
+                        <span class="logo-text">Ultrahuman</span>
+                    </a>
+                    <p class="footer-tagline">Advanced metabolic health and bio-monitoring wearables designed to optimize human performance. Zero subscriptions.</p>
+                </div>
+                
+                <div class="footer-links-group">
+                    <div class="footer-col">
+                        <h5>Product</h5>
+                        <ul>
+                            <li><a href="#specifications">Specifications</a></li>
+                            <li><a href="#sensoring-showcase">Sensors</a></li>
+                            <li><a href="#comparison">Comparison Matrix</a></li>
+                            <li><a href="#sizing-kit">Sizing Process</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Brand Information</h5>
+                        <ul>
+                            <li><a href="#">Official Website</a></li>
+                            <li><a href="#">Support Center</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ultrahuman Healthcare Pvt. Ltd. Custom static marketing demonstration page built for Outreach purpose.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Security</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vanilla Javascript Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
