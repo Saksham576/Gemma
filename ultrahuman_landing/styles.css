@@ -8,11 +8,11 @@
     --border-color: #222222;
     --border-color-hover: #333333;
     
-    /* Bionic Gold Brand Gradient */
-    --gold-primary: #D4AF37;
-    --gold-light: #F3E5AB;
-    --gold-dark: #AA7C11;
-    --gold-gradient: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #AA7C11 100%);
+    /* Monochromatic Brand Theme Colors (Replaces Gold/Yellow) */
+    --gold-primary: #FFFFFF;
+    --gold-light: #E5E5E5;
+    --gold-dark: #86868B;
+    --gold-gradient: linear-gradient(135deg, #FFFFFF 0%, #E5E5E5 50%, #86868B 100%);
     
     /* Text Colors */
     --text-primary: #FFFFFF;

@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         description: 'Track sleep, recovery, and movement with aircraft-grade titanium. The Red Dot Award-winning design features hypoallergenic inner lining with zero sensor bumps.',
         videoSrc: 'assets/video2.mp4',
         posterSrc: 'assets/frames/v2_03.jpg',
-        caption: 'Ultrahuman Ring AIR - Bionic Gold Edition',
+        caption: 'Ultrahuman Ring AIR',
         specHighlightImg: 'assets/frames/v2_15.jpg',
         badges: [
             { text: 'Red Dot Winner', icon: 'award' },
