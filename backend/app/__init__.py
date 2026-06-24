@@ -1,1 +1,0 @@
-"""TableProof backend package."""

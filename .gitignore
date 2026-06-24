@@ -1,8 +1,0 @@
-node_modules/
-frontend/dist/
-frontend/tsconfig.tsbuildinfo
-__pycache__/
-.pytest_cache/
-.env
-backend/.env
-*.pyc
