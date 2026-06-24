@@ -114,10 +114,10 @@ header {
 
 .logo-text {
     font-family: var(--font-heading);
-    font-size: 1.25rem;
+    font-size: 1.45rem;
     font-weight: 700;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    text-transform: lowercase;
 }
 
 .header-cta {
