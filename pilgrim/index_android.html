@@ -1,0 +1,2050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Achieve Korean Glass Skin with the Hydra Glow Moisturizer. Powered by Korean Rice Water, 3% Niacinamide, Hyaluronic Acid, and Ceramides. Deep 24hr hydration with zero stickiness.">
+    <meta name="keywords" content="Pilgrim, Korean Rice Water, moisturizer, glass skin, Hyaluronic Acid, Niacinamide, skin barrier, vegan skincare">
+    <meta name="author" content="Pilgrim Outreach Project">
+    <title>Pilgrim Korean Rice Water Hydra Glow Moisturizer</title>
+    
+    <!-- Open Graph Metadata for Social Sharing -->
+    <meta property="og:title" content="Pilgrim Korean Rice Water Hydra Glow Moisturizer | Reveal Your Glass Skin Glow">
+    <meta property="og:description" content="Achieve glass skin glow with deep 24hr hydration. Lightweight gel cream with Niacinamide, Hyaluronic Acid, and Ceramides.">
+    <meta property="og:image" content="v1_03.jpg">
+    <meta property="og:type" content="website">
+    
+    <!-- CSS Stylesheet -->
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Brand Design Tokens */
+:root {
+    --bg-primary: #FAF9F5; /* Premium soft linen cosmetic off-white */
+    --bg-secondary: #FFFFFF; /* Stark white card backgrounds */
+    --bg-tertiary: #F3F1EC; /* Light grey cream */
+    --border-color: #E7E5E0; /* Muted borders */
+    --border-color-hover: #C5C2BB;
+    
+    /* Pilgrim Brand Colors */
+    --brand-teal: #085F63; /* Main brand deep teal */
+    --brand-teal-light: #129490;
+    --brand-teal-dark: #053D40;
+    --brand-teal-glow: rgba(8, 95, 99, 0.1);
+    
+    /* Rice Water Range Pastel Accents */
+    --brand-rose: #FDA4AF; /* Soft pink */
+    --brand-rose-light: #FFF1F2; /* Soft pink background */
+    --brand-rose-dark: #BE123C;
+    
+    /* Text Colors */
+    --text-primary: #1C1917; /* Soft black */
+    --text-secondary: #57534E; /* Slate */
+    --text-muted: #8C8A82; /* Muted grey */
+    
+    /* Fonts */
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Inter', sans-serif;
+    
+    --container-max-width: 1200px;
+    --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Reset and Global Styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    overflow-x: hidden;
+    line-height: 1.6;
+    background-color: var(--bg-primary);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+}
+
+/* Utility Layouts */
+.container {
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Header & Navigation */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(250, 249, 245, 0.85);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid var(--border-color);
+    transition: var(--transition-smooth);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+
+.logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--brand-teal);
+}
+
+.logo-text {
+    font-family: var(--font-body);
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    text-transform: lowercase;
+    line-height: 1;
+}
+
+.logo-tagline {
+    font-size: 0.625rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    font-weight: 600;
+    margin-top: 0.2rem;
+}
+
+.header-cta {
+    text-decoration: none;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #FFFFFF;
+    background: var(--brand-teal);
+    padding: 0.65rem 1.6rem;
+    border-radius: 4px;
+    transition: var(--transition-smooth);
+}
+
+.header-cta:hover {
+    background: var(--brand-teal-dark);
+    transform: translateY(-1px);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 80px;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(circle at 75% 20%, rgba(253, 164, 175, 0.15) 0%, rgba(250, 249, 245, 0) 50%);
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Badges */
+.badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.4rem 1rem;
+    border-radius: 9999px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+}
+
+.badge.teal-badge {
+    border-color: var(--brand-teal-light);
+    color: var(--brand-teal);
+    background: var(--bg-secondary);
+}
+
+.badge svg {
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
+}
+
+/* Dynamic Headline */
+.hero-title {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: var(--text-primary);
+}
+
+.hero-title span.accent-text {
+    font-style: italic;
+    color: var(--brand-teal);
+    font-weight: 400;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 540px;
+    line-height: 1.6;
+}
+
+/* Primary Form & Checkout Action */
+.hero-checkout-widget {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-top: 1rem;
+    max-width: 520px;
+    box-shadow: 0 10px 30px rgba(8, 95, 99, 0.03);
+    transition: var(--transition-smooth);
+}
+
+.hero-checkout-widget:hover {
+    border-color: var(--border-color-hover);
+    box-shadow: 0 15px 40px rgba(8, 95, 99, 0.06);
+}
+
+.widget-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.widget-price {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.price-row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+}
+
+.price-now {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.price-original {
+    font-size: 1.25rem;
+    text-decoration: line-through;
+    color: var(--text-muted);
+}
+
+.price-sub {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.price-badge {
+    background: var(--brand-rose-light);
+    color: var(--brand-rose-dark);
+    border: 1px solid rgba(253, 164, 175, 0.3);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.3rem 0.75rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.sizing-selector {
+    margin-bottom: 1.5rem;
+}
+
+.sizing-title {
+    font-size: 0.8125rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.sizing-title span.kit-highlight {
+    color: var(--brand-teal);
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.size-pills {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.size-pill {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    padding: 0.8rem 1.2rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    transition: var(--transition-smooth);
+}
+
+.size-pill:hover {
+    border-color: var(--border-color-hover);
+    color: var(--text-primary);
+}
+
+.size-pill.active {
+    background: var(--brand-teal);
+    color: #FFFFFF;
+    border-color: transparent;
+}
+
+.size-pill .save-tag {
+    font-size: 0.65rem;
+    color: var(--brand-rose-dark);
+    background: var(--brand-rose-light);
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.size-pill.active .save-tag {
+    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.cta-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 1.1rem;
+    border: none;
+    border-radius: 6px;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 1.0625rem;
+    color: #FFFFFF;
+    background: var(--brand-teal);
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(8, 95, 99, 0.15);
+    transition: var(--transition-smooth);
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    background: var(--brand-teal-dark);
+    box-shadow: 0 8px 25px rgba(8, 95, 99, 0.25);
+}
+
+.cta-button svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.5;
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover svg {
+    transform: translateX(4px);
+}
+
+.checkout-guarantee {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border-color);
+    padding-top: 1rem;
+}
+
+.checkout-guarantee span {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-weight: 500;
+}
+
+.checkout-guarantee svg {
+    width: 14px;
+    height: 14px;
+    fill: none;
+    stroke: var(--brand-teal-light);
+    stroke-width: 2.5;
+}
+
+/* Hero Media Display (Ad Bridge) */
+.hero-media-container {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #000000;
+    aspect-ratio: 9 / 16;
+    max-height: 600px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.video-wrapper-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.outreach-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 2rem;
+    pointer-events: none;
+}
+
+.video-control-btn {
+    pointer-events: auto;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 9999px;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 0.8125rem;
+    color: var(--text-primary);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: var(--transition-smooth);
+}
+
+.video-control-btn:hover {
+    transform: scale(1.05);
+    background: #FFFFFF;
+}
+
+.video-control-btn svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.video-control-btn svg.hidden {
+    display: none;
+}
+
+.video-caption {
+    position: absolute;
+    bottom: 2rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #FFFFFF;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.pulse-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--brand-rose);
+    box-shadow: 0 0 0 0 rgba(253, 164, 175, 0.7);
+    animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(253, 164, 175, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 8px rgba(253, 164, 175, 0);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(253, 164, 175, 0);
+    }
+}
+
+.video-caption p {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Slideshow / Carousel Section */
+.slideshow-section {
+    padding: 100px 0;
+    background-color: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.section-tag {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    color: var(--brand-teal);
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    background: var(--brand-rose-light);
+    padding: 0.3rem 0.9rem;
+    border-radius: 9999px;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin-top: 0.5rem;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    height: 480px;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+    color: #FFFFFF;
+    padding: 2.5rem 2rem 2rem 2rem;
+}
+
+.slide-overlay span {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--brand-rose);
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+.slide-overlay p {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.carousel-control-btn {
+    pointer-events: auto;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: var(--transition-smooth);
+}
+
+.carousel-control-btn:hover {
+    background: #FFFFFF;
+    transform: scale(1.05);
+    border-color: var(--text-muted);
+}
+
+.carousel-control-btn svg {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: var(--text-primary);
+    stroke-width: 2.5;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 1.25rem;
+    right: 2rem;
+    display: flex;
+    gap: 0.5rem;
+    z-index: 10;
+}
+
+.carousel-dots .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.carousel-dots .dot.active {
+    background: #FFFFFF;
+    width: 20px;
+    border-radius: 4px;
+}
+
+/* Ingredients Section */
+.ingredients-section {
+    padding: 100px 0;
+    background-color: var(--bg-primary);
+}
+
+.ingredients-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.ingredient-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2rem;
+    transition: var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ingredient-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--brand-teal-light);
+    box-shadow: 0 10px 30px rgba(8, 95, 99, 0.05);
+}
+
+.ingredient-icon-wrapper {
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;
+    background: var(--brand-rose-light);
+    color: var(--brand-teal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ingredient-icon-wrapper svg {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+}
+
+.ingredient-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+.ingredient-purpose {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--brand-teal-light);
+    margin-top: -0.5rem;
+}
+
+.ingredient-card p:not(.ingredient-purpose) {
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Comparison Section */
+.comparison-section {
+    padding: 100px 0;
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    margin-top: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-secondary);
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.9375rem;
+}
+
+.comparison-table th, .comparison-table td {
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.comparison-table th {
+    font-family: var(--font-body);
+    font-weight: 700;
+    background: var(--bg-primary);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    color: var(--text-secondary);
+}
+
+.comparison-table th.brand-col {
+    background: var(--brand-rose-light);
+    color: var(--brand-teal);
+    font-size: 0.8125rem;
+}
+
+.comparison-table td.brand-col {
+    background: rgba(253, 164, 175, 0.05);
+    font-weight: 600;
+}
+
+.comparison-table td.feature-name {
+    font-weight: 600;
+    color: var(--text-primary);
+    background: var(--bg-primary);
+}
+
+.comparison-table tr.highlighted-row {
+    background: rgba(250, 249, 245, 0.5);
+}
+
+.comparison-table tr:last-child th, .comparison-table tr:last-child td {
+    border-bottom: none;
+}
+
+.check-icon {
+    color: var(--brand-teal);
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.check-icon svg {
+    width: 16px;
+    height: 16px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 3;
+}
+
+.cross-icon {
+    color: var(--text-muted);
+}
+
+/* Sizing Process / Ritual Section */
+.sizing-kit-section {
+    padding: 100px 0;
+    background-color: var(--bg-primary);
+    border-top: 1px solid var(--border-color);
+}
+
+.sizing-kit-grid {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.kit-media {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    aspect-ratio: 4/5;
+}
+
+.kit-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kit-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.kit-description {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.step-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    margin-top: 1rem;
+}
+
+.step-card {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.step-num {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--brand-teal);
+    background: var(--brand-rose-light);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.step-info h4 {
+    font-family: var(--font-body);
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.step-info p {
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* FAQ Section */
+.faq-section {
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+    padding: 100px 0;
+}
+
+.faq-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.faq-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: var(--transition-smooth);
+}
+
+.faq-card:hover {
+    border-color: var(--border-color-hover);
+}
+
+.faq-question-btn {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    text-align: left;
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 1.0625rem;
+    font-weight: 600;
+    transition: var(--transition-smooth);
+}
+
+.faq-question-btn svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.5;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-card.open .faq-question-btn svg {
+    transform: rotate(180deg);
+    stroke: var(--brand-teal);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-answer-inner {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    border-top: 1px solid var(--border-color);
+    padding-top: 1rem;
+}
+
+/* Footer Section */
+footer {
+    border-top: 1px solid var(--border-color);
+    padding: 5rem 0 2rem 0;
+    background: #0F1D1D; /* Clean contrasted dark teal/black */
+    color: #E2E8F0;
+}
+
+footer .logo-wrapper {
+    color: var(--brand-rose);
+}
+
+footer .logo-tagline {
+    color: #94A3B8;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.footer-info {
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.footer-tagline {
+    font-size: 0.875rem;
+    color: #94A3B8;
+    line-height: 1.6;
+}
+
+.footer-links-group {
+    display: flex;
+    gap: 4rem;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.footer-col h5 {
+    font-family: var(--font-body);
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #64748B;
+    font-weight: 700;
+}
+
+.footer-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+}
+
+.footer-col a {
+    text-decoration: none;
+    font-size: 0.875rem;
+    color: #94A3B8;
+    transition: var(--transition-smooth);
+}
+
+.footer-col a:hover {
+    color: var(--brand-rose);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid #1E293B;
+    font-size: 0.75rem;
+    color: #64748B;
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-bottom-links a {
+    color: #64748B;
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+.footer-bottom-links a:hover {
+    color: #E2E8F0;
+}
+
+/* Mobile Sticky Bottom Bar */
+.sticky-footer-bar {
+    position: fixed;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    background: #FFFFFF;
+    border-top: 1px solid var(--border-color);
+    box-shadow: 0 -8px 25px rgba(0,0,0,0.06);
+    z-index: 999;
+    padding: 1rem 2rem;
+    transition: bottom 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.sticky-footer-bar.visible {
+    bottom: 0;
+}
+
+.sticky-bar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+}
+
+.sticky-price-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.sticky-price {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1;
+}
+
+.sticky-title {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    margin-top: 0.2rem;
+}
+
+.sticky-cta {
+    background: var(--brand-teal);
+    color: #FFFFFF;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 0.9375rem;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.sticky-cta:hover {
+    background: var(--brand-teal-dark);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .hero-media-container {
+        max-width: 420px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .ingredients-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .sizing-kit-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .kit-media {
+        max-width: 500px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+    
+    .container {
+        padding: 0 1.5rem;
+    }
+    
+    .hero {
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+    
+    .hero-title {
+        font-size: 2.6rem;
+    }
+    
+    .carousel-track {
+        height: 380px;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .footer-links-group {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ingredients-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .size-pills {
+        flex-direction: column;
+    }
+    
+    .footer-links-group {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .sticky-footer-bar {
+        padding: 1rem 1.5rem;
+    }
+}
+
+</style>
+    
+    <!-- SVG Defs for Shared Icons -->
+    <svg style="display: none;">
+        <defs>
+            <linearGradient id="tealGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#129490" />
+                <stop offset="100%" stop-color="#085F63" />
+            </linearGradient>
+        </defs>
+    </svg>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo-wrapper" id="nav-logo">
+                <span class="logo-text">pilgrim</span>
+                <span class="logo-tagline">world's beauty for you</span>
+            </a>
+            <a href="#checkout-widget" class="header-cta" id="header-cta-btn">Shop Now</a>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="hero" id="hero-section">
+            <div class="container hero-grid">
+                
+                <!-- Hero Content Side -->
+                <div class="hero-content">
+                    <div class="badge-container" id="badge-container">
+                        <!-- Dynamic Badges loaded by script.js -->
+                        <div class="badge teal-badge">
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <span>Korean Beauty Secret</span>
+                        </div>
+                        <div class="badge">
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <span>100% Vegan & Safe</span>
+                        </div>
+                    </div>
+                    
+                    <h1 class="hero-title" id="hero-title">
+                        Reveal Your Glass Skin Glow. <span class="accent-text">Zero Greasiness.</span>
+                    </h1>
+                    
+                    <p class="hero-description" id="hero-description">
+                        Achieve an instant glass-like skin glow and deep 24-hour hydration. Lightweight gel cream powered by Korean Rice Water, 3% Niacinamide, and Ceramides to strengthen your skin barrier.
+                    </p>
+
+                    <!-- Interactive Checkout Widget (Conversion Maximizer) -->
+                    <div class="hero-checkout-widget" id="checkout-widget">
+                        <div class="widget-row">
+                            <div class="widget-price">
+                                <span class="price-row">
+                                    <span class="price-now">₹395</span>
+                                    <span class="price-original">₹495</span>
+                                </span>
+                                <span class="price-sub">Net Qty: 100 g | 3.52 oz. • All Skin Types</span>
+                            </div>
+                            <span class="price-badge">Save 20% Off</span>
+                        </div>
+                        
+                        <!-- Size/Pack Selection pills -->
+                        <div class="sizing-selector">
+                            <div class="sizing-title">
+                                <span>Select Pack Option</span>
+                                <span class="kit-highlight">Best Seller: Pack of 2</span>
+                            </div>
+                            <div class="size-pills">
+                                <button class="size-pill active" data-size="1" data-price="395" data-orig="495" data-discount="20">1 Pack (₹395)</button>
+                                <button class="size-pill" data-size="2" data-price="695" data-orig="990" data-discount="30">Pack of 2 (₹695) <span class="save-tag">Save 30%</span></button>
+                            </div>
+                        </div>
+
+                        <!-- CTA Button -->
+                        <button class="cta-button" id="main-cta-btn">
+                            <span>Get Glass Skin Glow</span>
+                            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                        
+                        <!-- Trust guarantees -->
+                        <div class="checkout-guarantee">
+                            <span>
+                                <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                FDA Approved
+                            </span>
+                            <span>
+                                <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                                Cruelty-Free
+                            </span>
+                            <span>
+                                <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 15h-2v-6h2zm0-8h-2V7h2z"/></svg>
+                                No Toxic Chemicals
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hero Media Display (Dynamic Ad Bridge) -->
+                <div class="hero-media-container">
+                    <div class="video-wrapper-card">
+                        <video id="hero-video" class="outreach-video" playsinline loop muted autoplay preload="metadata" poster="v1_03.jpg">
+                            <source src="lv_0_20260626144215.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        
+                        <!-- Custom Video Controls Overlay -->
+                        <div class="video-overlay" id="video-overlay">
+                            <button class="video-control-btn mute-btn" id="mute-btn" aria-label="Unmute video">
+                                <svg class="sound-off-icon" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77zM4.19 5.92L3.5 6.61 9.9 13H3v4h4l5 5v-9.13l5.39 5.39c-.7.53-1.5.92-2.39 1.13v2.07c1.43-.3 2.72-.98 3.79-1.89l2.23 2.23.69-.69L4.19 5.92zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                                <svg class="sound-on-icon hidden" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                                <span class="btn-text">Tap to Sound On</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="video-caption">
+                        <span class="pulse-indicator"></span>
+                        <p id="video-caption-title">UGC Spotlight: Ultimate Hydration Review</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Video Keyframe Slideshow (Carousel Section) -->
+        <section class="slideshow-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Video Walkthrough</span>
+                    <h2 class="section-title">See the Hydra Glow in Action</h2>
+                </div>
+                
+                <div class="carousel-container">
+                    <div class="carousel-track" id="carousel-track">
+                        <!-- Keyframe slides will be loaded depending on active UTM campaign -->
+                        <div class="carousel-slide active" data-index="0">
+                            <img src="v1_03.jpg" alt="Korean Rice Water application step 1">
+                            <div class="slide-overlay">
+                                <span>01 / Application</span>
+                                <p>Lightweight gel-like consistency absorbs in seconds.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide" data-index="1">
+                            <img src="v1_08.jpg" alt="Korean Rice Water texture glow">
+                            <div class="slide-overlay">
+                                <span>02 / Glass Skin Glow</span>
+                                <p>Instant dewy, healthy skin appearance without oily residue.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide" data-index="2">
+                            <img src="v1_13.jpg" alt="Korean Rice Water moisture locked">
+                            <div class="slide-overlay">
+                                <span>03 / Barrier Lock</span>
+                                <p>Ceramides and Niacinamide lock hydration for 24 hours.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-controls">
+                        <button class="carousel-control-btn prev" id="carousel-prev" aria-label="Previous image">
+                            <svg viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg>
+                        </button>
+                        <button class="carousel-control-btn next" id="carousel-next" aria-label="Next image">
+                            <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+                        </button>
+                    </div>
+                    
+                    <div class="carousel-dots" id="carousel-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Core Ingredients Spotlight -->
+        <section class="ingredients-section" id="ingredients">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Active Ingredients</span>
+                    <h2 class="section-title">Formulated for Glass Skin</h2>
+                    <p class="section-subtitle">Deep hydration meets skin-brightening actives in a lightweight, non-sticky gel base.</p>
+                </div>
+                
+                <div class="ingredients-grid">
+                    <!-- Ingredient Card 1 -->
+                    <div class="ingredient-card">
+                        <div class="ingredient-icon-wrapper">
+                            <svg viewBox="0 0 24 24"><path d="M12 2c-5.33 4.5-8 8.5-8 12s2.67 6 8 8c5.33-2 8-4.5 8-8s-2.67-7.5-8-12zM12 18a4 4 0 0 1-4-4c0-2.33 2-4.5 4-6.33V18z"/></svg>
+                        </div>
+                        <h3>Korean Rice Water</h3>
+                        <p class="ingredient-purpose">The Glow Powerhouse</p>
+                        <p>Rich in amino acids and vitamins, this traditional Korean beauty staple helps brighten skin tone, refine texture, and reveal a natural glass-skin radiance.</p>
+                    </div>
+
+                    <!-- Ingredient Card 2 -->
+                    <div class="ingredient-card">
+                        <div class="ingredient-icon-wrapper">
+                            <svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18M12 3a9 9 0 0 1 9 9M12 3a9 9 0 0 0-9 9m9 9a9 9 0 0 0 9-9m-9 9a9 9 0 0 1-9-9"/></svg>
+                        </div>
+                        <h3>3% Niacinamide</h3>
+                        <p class="ingredient-purpose">Brightening & Texture Refining</p>
+                        <p>Fades dark spots, targets hyperpigmentation, minimizes the appearance of enlarged pores, and evens out skin tone for a clear complexion.</p>
+                    </div>
+
+                    <!-- Ingredient Card 3 -->
+                    <div class="ingredient-card">
+                        <div class="ingredient-icon-wrapper">
+                            <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 2.5-2.5 2.5 2.5 0 0 1-2.5 2.5z"/></svg>
+                        </div>
+                        <h3>5 Types of Hyaluronic Acid</h3>
+                        <p class="ingredient-purpose">Multi-Level Hydration</p>
+                        <p>Varying molecular weights penetrate multiple layers of the skin, locking in intense moisture to keep skin plump, supple, and hydrated all day.</p>
+                    </div>
+
+                    <!-- Ingredient Card 4 -->
+                    <div class="ingredient-card">
+                        <div class="ingredient-icon-wrapper">
+                            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zm0 10l-10-5v10l10 5 10-5V7l-10 5z"/></svg>
+                        </div>
+                        <h3>Ceramides</h3>
+                        <p class="ingredient-purpose">Skin Barrier Guard</p>
+                        <p>Strengthens the skin's natural lipid barrier to lock in essential moisture, protect against environmental stressors, and prevent dryness.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Comparison Matrix -->
+        <section class="comparison-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">The Pilgrim Difference</span>
+                    <h2 class="section-title">Say Goodbye to Heavy, Sticky Creams</h2>
+                </div>
+                
+                <div class="table-wrapper">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Skin Metric</th>
+                                <th class="brand-col">Pilgrim Rice Water Gel Cream</th>
+                                <th>Standard Gel Moisturizer</th>
+                                <th>Heavy Hydration Cream</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="highlighted-row">
+                                <td class="feature-name">Hydration Depth</td>
+                                <td class="brand-col text-accent check-icon">
+                                    <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                                    5-Layer Hyaluronic (Deep)
+                                </td>
+                                <td>1-Layer Hyaluronic (Surface)</td>
+                                <td>Occlusive-based (Heavy barrier)</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Finish / Feel</td>
+                                <td class="brand-col text-accent check-icon">
+                                    <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                                    Glass-Skin Dewy (Zero sticky)
+                                </td>
+                                <td>Flat Matte Finish</td>
+                                <td>Greasy & Sticky Finish</td>
+                            </tr>
+                            <tr class="highlighted-row">
+                                <td class="feature-name">Skin Brightening</td>
+                                <td class="brand-col text-accent check-icon">
+                                    <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                                    3% Niacinamide + Rice Water
+                                </td>
+                                <td class="cross-icon">None</td>
+                                <td class="cross-icon">None</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Absorb Time</td>
+                                <td class="brand-col text-accent check-icon">
+                                    <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                                    Under 15 Seconds
+                                </td>
+                                <td>~30 Seconds</td>
+                                <td>Over 3 Minutes</td>
+                            </tr>
+                            <tr class="highlighted-row">
+                                <td class="feature-name">Skin Barrier Repair</td>
+                                <td class="brand-col text-accent check-icon">
+                                    <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                                    Active Ceramides
+                                </td>
+                                <td class="cross-icon">None</td>
+                                <td>Synthetic Occlusives</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sizing & Ritual Section -->
+        <section class="sizing-kit-section" id="how-to-use">
+            <div class="container sizing-kit-grid">
+                
+                <div class="kit-media">
+                    <img id="spec-highlight-image" src="v1_13.jpg" alt="How to apply Pilgrim moisturizer ritual">
+                </div>
+                
+                <div class="kit-content">
+                    <span class="section-tag">Application Guide</span>
+                    <h2 class="section-title">The Glass Skin Ritual</h2>
+                    <p class="kit-description">For maximum absorption and 24-hour retention of nutrients, follow this simple morning and night skincare routine:</p>
+                    
+                    <div class="step-list">
+                        <!-- Step 1 -->
+                        <div class="step-card">
+                            <span class="step-num">1</span>
+                            <div class="step-info">
+                                <h4>Cleanse & Tone</h4>
+                                <p>Wash your face with a gentle cleanser and pat dry. Apply your favorite toner (preferably Rice Water toner) to prepare the skin.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2 -->
+                        <div class="step-card">
+                            <span class="step-num">2</span>
+                            <div class="step-info">
+                                <h4>Apply Gel Cream</h4>
+                                <p>Take a pea-sized amount of Pilgrim Hydra Glow Moisturizer. Dot it all over your face and neck.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3 -->
+                        <div class="step-card">
+                            <span class="step-num">3</span>
+                            <div class="step-info">
+                                <h4>Massage & Lock</h4>
+                                <p>Gently massage in circular upward strokes. Allow the Ceramides and Hyaluronic Acid to absorb and lock in the glow.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Accordion FAQ Section -->
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">FAQ</span>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                </div>
+                
+                <div class="faq-wrapper">
+                    <!-- FAQ 1 -->
+                    <div class="faq-card">
+                        <button class="faq-question-btn">
+                            <span>Is it suitable for acne-prone and oily skin?</span>
+                            <svg viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                Yes, absolutely. The Pilgrim Korean Rice Water Moisturizer is formulated as a lightweight, oil-free gel cream. It absorbs rapidly into the skin without clogging pores, making it ideal for oily, combination, and acne-prone skin types.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-card">
+                        <button class="faq-question-btn">
+                            <span>What are the key benefits of Korean Rice Water?</span>
+                            <svg viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                Korean Rice Water is historically renowned for its skin-brightening properties. It contains vitamins, minerals, and amino acids that soothe the skin, fade dark spots, even out skin tone, and deliver an instant radiant glow (the coveted "glass skin" effect).
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-card">
+                        <button class="faq-question-btn">
+                            <span>Can I use this moisturizer under makeup?</span>
+                            <svg viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                Yes! Because of its lightweight, fast-absorbing gel texture, it acts as an excellent hydrating base/primer for makeup. It smooths the skin barrier and prevents makeup from looking cakey or dry without adding shine.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-card">
+                        <button class="faq-question-btn">
+                            <span>Is this moisturizer cruelty-free and vegan?</span>
+                            <svg viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                Yes. All Pilgrim products are 100% vegan, cruelty-free, FDA-approved, and strictly formulated without toxic chemicals like parabens, sulfates, or phthalates.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="#" class="logo-wrapper">
+                        <span class="logo-text">pilgrim</span>
+                    </a>
+                    <p class="footer-tagline">Secrets of Jeju Island & Clean Skincare Formulation. Cruelty-free, vegan cosmetics representing the world's best beauty secrets.</p>
+                </div>
+                <div class="footer-links-group">
+                    <div class="footer-col">
+                        <h5>Explore</h5>
+                        <ul>
+                            <li><a href="#ingredients">Ingredients</a></li>
+                            <li><a href="#how-to-use">Glow Ritual</a></li>
+                            <li><a href="#faq">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Product Range</h5>
+                        <ul>
+                            <li><a href="#">Korean Beauty</a></li>
+                            <li><a href="#">French Red Vine</a></li>
+                            <li><a href="#">Spanish Squalane</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pilgrim India. All rights reserved. Made for personal portfolio outreach.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Footer Bar -->
+    <div class="sticky-footer-bar" id="mobile-sticky-bar">
+        <div class="sticky-bar-content">
+            <div class="sticky-price-info">
+                <span class="sticky-price" id="sticky-price-display">₹395</span>
+                <span class="sticky-title">100g Hydra Glow Gel</span>
+            </div>
+            <button class="sticky-cta" id="sticky-cta-btn">Buy Now</button>
+        </div>
+    </div>
+
+    <!-- JavaScript Actions -->
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Dynamic Content Customization based on UTM / Query Params
+    const urlParams = new URLSearchParams(window.location.search);
+    const videoParam = urlParams.get('v') || urlParams.get('utm_video') || urlParams.get('ref');
+
+    // DOM Elements to personalize
+    const heroTitle = document.getElementById('hero-title');
+    const heroDescription = document.getElementById('hero-description');
+    const heroVideo = document.getElementById('hero-video');
+    const videoCaptionTitle = document.getElementById('video-caption-title');
+    const badgeContainer = document.getElementById('badge-container');
+    const specHighlightImage = document.getElementById('spec-highlight-image');
+    const carouselTrack = document.getElementById('carousel-track');
+    const carouselDots = document.getElementById('carousel-dots');
+
+    // Default configuration (Campaign 1: Glass Skin Glow Focus)
+    let config = {
+        title: 'Reveal Your Glass Skin Glow. <span class="accent-text">Zero Greasiness.</span>',
+        description: 'Achieve an instant glass-like skin glow and deep 24-hour hydration. Lightweight gel cream powered by Korean Rice Water, 3% Niacinamide, and Ceramides to strengthen your skin barrier.',
+        videoSrc: 'lv_0_20260626144215.mp4',
+        posterSrc: 'v1_03.jpg',
+        caption: 'Outreach Spotlight: Korean Glass Skin Glow',
+        specHighlightImg: 'v1_13.jpg',
+        badges: [
+            { text: 'Korean Beauty Secret', icon: 'sparkles' },
+            { text: '100% Vegan & Safe', icon: 'check' },
+            { text: 'Barrier Repair', icon: 'shield' }
+        ],
+        slideshow: [
+            { img: 'v1_03.jpg', tag: '01 / Application', desc: 'Lightweight gel-like consistency absorbs in seconds.' },
+            { img: 'v1_08.jpg', tag: '02 / Glass Skin Glow', desc: 'Instant dewy, healthy skin appearance without oily residue.' },
+            { img: 'v1_13.jpg', tag: '03 / Barrier Lock', desc: 'Ceramides and Niacinamide lock hydration for 24 hours.' },
+            { img: 'v1_18.jpg', tag: '04 / Final Result', desc: 'Hydrated, plump, and glowing skin all day.' }
+        ]
+    };
+
+    // Campaign 2 Custom Configuration (UGC: Hydration & Clean Formula Focus)
+    if (videoParam === '2' || videoParam === 'ugc' || videoParam === 'barrier') {
+        config = {
+            title: 'Plump & Hydrated Skin. <span class="accent-text">Zero Stickiness.</span> All Day.',
+            description: 'Unlock deep multi-level moisture with 5 types of Hyaluronic Acid and Ceramides. A fast-absorbing gel formula that hydrates your skin barrier without leaving any heavy, sticky residue.',
+            videoSrc: 'lv_0_20260626144238.mp4',
+            posterSrc: 'v2_03.jpg',
+            caption: 'UGC Spotlight: Hydration & Texture Test',
+            specHighlightImg: 'v2_13.jpg',
+            badges: [
+                { text: 'Deep Hydration', icon: 'water' },
+                { text: 'Dermatologist Tested', icon: 'shield' },
+                { text: 'No Toxic Fragrance', icon: 'heart' }
+            ],
+            slideshow: [
+                { img: 'v2_03.jpg', tag: '01 / Texture Check', desc: 'Ultra-light cream gel formulation.' },
+                { img: 'v2_08.jpg', tag: '02 / Fast Absorption', desc: 'Quickly penetrates down to deep skin layers.' },
+                { img: 'v2_13.jpg', tag: '03 / Moisture Retention', desc: 'Locks in skin barrier lipids to prevent water loss.' }
+            ]
+        };
+    }
+
+    // Apply configuration to DOM
+    if (heroTitle) heroTitle.innerHTML = config.title;
+    if (heroDescription) heroDescription.textContent = config.description;
+    
+    if (heroVideo) {
+        heroVideo.setAttribute('poster', config.posterSrc);
+        heroVideo.src = config.videoSrc;
+        heroVideo.load();
+    }
+    
+    if (videoCaptionTitle) videoCaptionTitle.textContent = config.caption;
+    if (specHighlightImage) specHighlightImage.src = config.specHighlightImg;
+
+    // Apply Badges
+    if (badgeContainer) {
+        badgeContainer.innerHTML = '';
+        config.badges.forEach(b => {
+            const badgeEl = document.createElement('div');
+            badgeEl.className = 'badge';
+            if (b.text === 'Korean Beauty Secret' || b.text === 'Deep Hydration') {
+                badgeEl.classList.add('teal-badge');
+            }
+            
+            // Inline SVGs for badges
+            let svgIcon = '';
+            if (b.icon === 'sparkles') {
+                svgIcon = `<svg viewBox="0 0 24 24"><path d="M9 12.27l2.1-4.27 4.27-2.1-4.27-2.1L9 1.63 6.9 5.9 2.63 8l4.27 2.1L9 12.27zm8.5 7.1l1.05-2.13 2.13-1.05-2.13-1.05-1.05-2.13-1.05 2.13-2.13 1.05 2.13 1.05 1.05 2.13z"/></svg>`;
+            } else if (b.icon === 'check') {
+                svgIcon = `<svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>`;
+            } else if (b.icon === 'shield') {
+                svgIcon = `<svg viewBox="0 0 24 24"><path d="M12 2L2 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-10-3z"/></svg>`;
+            } else if (b.icon === 'water') {
+                svgIcon = `<svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>`;
+            } else if (b.icon === 'heart') {
+                svgIcon = `<svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>`;
+            }
+            
+            badgeEl.innerHTML = `${svgIcon}<span>${b.text}</span>`;
+            badgeContainer.appendChild(badgeEl);
+        });
+    }
+
+    // Apply Carousel Slides
+    let currentSlide = 0;
+    let slidesCount = config.slideshow.length;
+
+    if (carouselTrack && carouselDots) {
+        carouselTrack.innerHTML = '';
+        carouselDots.innerHTML = '';
+        
+        config.slideshow.forEach((slide, index) => {
+            // Build Slide
+            const slideEl = document.createElement('div');
+            slideEl.className = `carousel-slide ${index === 0 ? 'active' : ''}`;
+            slideEl.setAttribute('data-index', index);
+            slideEl.innerHTML = `
+                <img src="${slide.img}" alt="${slide.tag}">
+                <div class="slide-overlay">
+                    <span>${slide.tag}</span>
+                    <p>${slide.desc}</p>
+                </div>
+            `;
+            carouselTrack.appendChild(slideEl);
+            
+            // Build Dot
+            const dotEl = document.createElement('span');
+            dotEl.className = `dot ${index === 0 ? 'active' : ''}`;
+            dotEl.setAttribute('data-index', index);
+            carouselDots.appendChild(dotEl);
+        });
+    }
+
+    // Carousel Actions
+    const updateCarousel = (index) => {
+        const track = document.getElementById('carousel-track');
+        const dots = document.querySelectorAll('.carousel-dots .dot');
+        const slides = document.querySelectorAll('.carousel-slide');
+        
+        if (!track || slides.length === 0) return;
+        
+        // Boundaries
+        if (index >= slides.length) currentSlide = 0;
+        else if (index < 0) currentSlide = slides.length - 1;
+        else currentSlide = index;
+        
+        // Translate track
+        track.style.transform = `translateX(-${currentSlide * 100}%)`;
+        
+        // Toggle active slide
+        slides.forEach(s => s.classList.remove('active'));
+        slides[currentSlide].classList.add('active');
+        
+        // Toggle active dot
+        dots.forEach(d => d.classList.remove('active'));
+        if (dots[currentSlide]) dots[currentSlide].classList.add('active');
+    };
+
+    // Attach Carousel Button Events
+    const nextBtn = document.getElementById('carousel-next');
+    const prevBtn = document.getElementById('carousel-prev');
+    
+    if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+            updateCarousel(currentSlide + 1);
+        });
+    }
+    
+    if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+            updateCarousel(currentSlide - 1);
+        });
+    }
+    
+    // Attach Dot Clicks
+    document.addEventListener('click', (e) => {
+        if (e.target.classList.contains('dot')) {
+            const index = parseInt(e.target.getAttribute('data-index'), 10);
+            updateCarousel(index);
+        }
+    });
+
+    // 2. Video Mute/Unmute Controls
+    const muteBtn = document.getElementById('mute-btn');
+    const soundOffIcon = document.querySelector('.sound-off-icon');
+    const soundOnIcon = document.querySelector('.sound-on-icon');
+    const btnText = document.querySelector('.btn-text');
+
+    if (muteBtn && heroVideo) {
+        muteBtn.addEventListener('click', () => {
+            if (heroVideo.muted) {
+                heroVideo.muted = false;
+                soundOffIcon.classList.add('hidden');
+                soundOnIcon.classList.remove('hidden');
+                btnText.textContent = 'Mute';
+            } else {
+                heroVideo.muted = true;
+                soundOffIcon.classList.remove('hidden');
+                soundOnIcon.classList.add('hidden');
+                btnText.textContent = 'Tap to Sound On';
+            }
+        });
+    }
+
+    // 3. Interactive Pricing Selector Widget
+    const sizePills = document.querySelectorAll('.size-pill');
+    const priceNowDisplay = document.querySelector('.price-now');
+    const priceOriginalDisplay = document.querySelector('.price-original');
+    const priceBadge = document.querySelector('.price-badge');
+    const mainCtaBtn = document.getElementById('main-cta-btn');
+    const stickyPriceDisplay = document.getElementById('sticky-price-display');
+    const stickyTitle = document.querySelector('.sticky-title');
+
+    sizePills.forEach(pill => {
+        pill.addEventListener('click', () => {
+            // Remove active from all
+            sizePills.forEach(p => p.classList.remove('active'));
+            
+            // Add active to current
+            pill.classList.add('active');
+            
+            // Parse data attributes
+            const size = pill.getAttribute('data-size');
+            const price = pill.getAttribute('data-price');
+            const original = pill.getAttribute('data-orig');
+            const discount = pill.getAttribute('data-discount');
+            
+            // Update Displays
+            if (priceNowDisplay) priceNowDisplay.textContent = `₹${price}`;
+            if (priceOriginalDisplay) priceOriginalDisplay.textContent = `₹${original}`;
+            if (priceBadge) priceBadge.textContent = `Save ${discount}% Off`;
+            if (stickyPriceDisplay) stickyPriceDisplay.textContent = `₹${price}`;
+            
+            // Update Text
+            if (size === '1') {
+                if (mainCtaBtn) mainCtaBtn.innerHTML = `<span>Get Glass Skin Glow</span><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>`;
+                if (stickyTitle) stickyTitle.textContent = '100g Hydra Glow Gel';
+            } else {
+                if (mainCtaBtn) mainCtaBtn.innerHTML = `<span>Get Pack of 2 (30% Off)</span><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>`;
+                if (stickyTitle) stickyTitle.textContent = 'Pack of 2 Hydra Glow Gel';
+            }
+        });
+    });
+
+    // Main CTA redirect
+    if (mainCtaBtn) {
+        mainCtaBtn.addEventListener('click', () => {
+            const activePill = document.querySelector('.size-pill.active');
+            const size = activePill ? activePill.getAttribute('data-size') : '1';
+            let variantId = '46878271308005'; // Default Variant ID on pilgrim
+            if (size === '2') {
+                variantId = '46878271340773'; // Example pack of 2 variant ID
+            }
+            
+            // Redirect to cart addition link to increase Cart Addition Rate (CAR)
+            window.location.href = `https://discoverpilgrim.com/cart/add?id=${variantId}&quantity=1`;
+        });
+    }
+
+    // 4. FAQ Accordion Logic
+    const faqCards = document.querySelectorAll('.faq-card');
+
+    faqCards.forEach(card => {
+        const btn = card.querySelector('.faq-question-btn');
+        const answer = card.querySelector('.faq-answer');
+        
+        if (btn && answer) {
+            btn.addEventListener('click', () => {
+                const isOpen = card.classList.contains('open');
+                
+                // Close all FAQs first
+                faqCards.forEach(c => {
+                    c.classList.remove('open');
+                    const ans = c.querySelector('.faq-answer');
+                    if (ans) ans.style.maxHeight = '0px';
+                });
+                
+                // Toggle current FAQ
+                if (!isOpen) {
+                    card.classList.add('open');
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                }
+            });
+        }
+    });
+
+    // 5. Mobile Sticky Footer Bar trigger on scroll
+    const checkoutWidget = document.getElementById('checkout-widget');
+    const mobileStickyBar = document.getElementById('mobile-sticky-bar');
+    const stickyCtaBtn = document.getElementById('sticky-cta-btn');
+
+    if (checkoutWidget && mobileStickyBar) {
+        window.addEventListener('scroll', () => {
+            const widgetRect = checkoutWidget.getBoundingClientRect();
+            // Show sticky bar when the checkout widget leaves the viewport
+            if (widgetRect.bottom < 0) {
+                mobileStickyBar.classList.add('visible');
+            } else {
+                mobileStickyBar.classList.remove('visible');
+            }
+        });
+    }
+    
+    // Mobile sticky CTA redirects to purchase too
+    if (stickyCtaBtn) {
+        stickyCtaBtn.addEventListener('click', () => {
+            const mainCta = document.getElementById('main-cta-btn');
+            if (mainCta) mainCta.click();
+        });
+    }
+});
+
+</script>
+</body>
+</html>
