@@ -1,0 +1,154 @@
+{
+ "notes": "Hook words only, from offline speech recognition (Vosk small-en, grammar-constrained) on the mix; lines the recogniser could not hear reliably are left out until the real lyrics are pasted in.",
+ "lines": [
+  {
+   "text": "Google it!",
+   "start": 29.31,
+   "end": 29.82,
+   "words": [
+    {
+     "w": "Google",
+     "start": 29.31,
+     "end": 29.61
+    },
+    {
+     "w": "it!",
+     "start": 29.61,
+     "end": 29.82
+    }
+   ]
+  },
+  {
+   "text": "Everybody",
+   "start": 30.48,
+   "end": 31.38,
+   "words": [
+    {
+     "w": "Everybody",
+     "start": 30.48,
+     "end": 31.38
+    }
+   ]
+  },
+  {
+   "text": "Click clack",
+   "start": 32.79,
+   "end": 33.46,
+   "words": [
+    {
+     "w": "Click",
+     "start": 32.79,
+     "end": 33.06
+    },
+    {
+     "w": "clack",
+     "start": 33.06,
+     "end": 33.46
+    }
+   ]
+  },
+  {
+   "text": "Just Google it!",
+   "start": 36.18,
+   "end": 37.05,
+   "words": [
+    {
+     "w": "Just",
+     "start": 36.18,
+     "end": 36.48
+    },
+    {
+     "w": "Google",
+     "start": 36.48,
+     "end": 36.84
+    },
+    {
+     "w": "it!",
+     "start": 36.84,
+     "end": 37.05
+    }
+   ]
+  },
+  {
+   "text": "Google",
+   "start": 38.22,
+   "end": 38.67,
+   "words": [
+    {
+     "w": "Google",
+     "start": 38.22,
+     "end": 38.67
+    }
+   ]
+  },
+  {
+   "text": "Are you stuck on the couch?",
+   "start": 54.33,
+   "end": 55.41,
+   "words": [
+    {
+     "w": "Are",
+     "start": 54.33,
+     "end": 54.42
+    },
+    {
+     "w": "you",
+     "start": 54.42,
+     "end": 54.51
+    },
+    {
+     "w": "stuck",
+     "start": 54.51,
+     "end": 54.78
+    },
+    {
+     "w": "on",
+     "start": 54.78,
+     "end": 54.9
+    },
+    {
+     "w": "the",
+     "start": 54.9,
+     "end": 54.99
+    },
+    {
+     "w": "couch?",
+     "start": 54.99,
+     "end": 55.41
+    }
+   ]
+  },
+  {
+   "text": "What's the capital of Norway?",
+   "start": 56.55,
+   "end": 57.93,
+   "words": [
+    {
+     "w": "What's",
+     "start": 56.55,
+     "end": 56.73
+    },
+    {
+     "w": "the",
+     "start": 56.73,
+     "end": 56.82
+    },
+    {
+     "w": "capital",
+     "start": 56.82,
+     "end": 57.3
+    },
+    {
+     "w": "of",
+     "start": 57.3,
+     "end": 57.42
+    },
+    {
+     "w": "Norway?",
+     "start": 57.42,
+     "end": 57.93
+    }
+   ]
+  }
+ ]
+}

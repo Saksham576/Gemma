@@ -1,0 +1,6 @@
+app/node_modules/
+# reference assets used only for local benchmarking; never commit them
+audio/pdoom.mp3
+!out/
+out/*
+!out/preview_google_it.mp4
