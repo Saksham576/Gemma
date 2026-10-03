@@ -1,6 +1,6 @@
 # Saksham — portfolio reel
 
-A 20-second, hand-painted motion-graphics reel. Every frame is procedurally painted in [p5.js](https://p5js.org) and [p5.brush](https://github.com/acamposuribe/p5.brush), and the output is **`out/portfolio.mp4`** (1920×1080, 24 fps, animated on twos).
+A 20-second, hand-painted motion-graphics reel (1920×1080, 24 fps, animated on twos). Every frame is procedurally painted in [p5.js](https://p5js.org) and [p5.brush](https://github.com/acamposuribe/p5.brush). Watch **[`out/portfolio_web.mp4`](out/portfolio_web.mp4)**. The full-quality master, `out/portfolio.mp4`, is too large to commit; rebuild it with the steps below.
 
 Sak, a little ink-and-watercolour builder, works through the three projects in this repo:
 
@@ -30,6 +30,7 @@ open studio.html                                   # scrub it in Chrome (?t=12 j
 node render.mjs --sheet=1,3,6,8,11,13,16,19 --cols=4 --w=480 --out=out/check/sheet.jpg
 node render.mjs --frames --twos --workers=3        # parallel, resumable frames → out/frames
 node render.mjs --encode --out=out/portfolio.mp4
+ffmpeg -i out/portfolio.mp4 -c:v libx264 -preset slow -crf 24 -pix_fmt yuv420p -movflags +faststart out/portfolio_web.mp4
 ```
 
 Add `--soft-gl` on a machine with no GPU. The watercolour fills then render slowly, about 30 s per frame. If Chrome isn't in a standard location, pass `--chrome=<path>`.

@@ -36,7 +36,6 @@ function playwrightChromes() {
     .map(n => `${dir}/${n}/chrome-linux64/chrome`);
 }
 const CHROME = CHROMES.find(p => p && existsSync(p));
-if (!CHROME) { console.error('Chrome not found: pass --chrome=<path> or set CHROME_PATH'); process.exit(1); }
 const fps = +(args.fps || 24), FRAMES_DIR = 'out/frames';
 const run = (cmd, a) => new Promise((ok, bad) => { const p = spawn(cmd, a, { stdio: 'inherit' }); p.on('close', c => c ? bad(new Error(cmd + ' exited ' + c)) : ok()); });
 const times = s => String(s).split(',').map(Number);
@@ -54,6 +53,7 @@ if (args.encode) {
   process.exit(0);
 }
 
+if (!CHROME) { console.error('Chrome not found: pass --chrome=<path> or set CHROME_PATH'); process.exit(1); }
 // --soft-gl: no GPU on this machine; render WebGL in software (SwiftShader), which Chrome only allows when asked.
 // --gpu-angle=vulkan|gl-egl: headless Linux on an NVIDIA GPU (e.g. a cloud or cluster node); plain --use-gl=angle gets
 // no WebGL context there. Check which GPU Chrome actually lands on with gpu_probe.mjs.
