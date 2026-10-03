@@ -1,0 +1,18 @@
+{
+  "name": "sak-shorts",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Wordless Sak cartoon Shorts (1080x1920), hand-painted in p5.brush with synthesised music and foley",
+  "scripts": {
+    "frames": "node render.mjs --frames --twos --workers=3",
+    "sound": "node render.mjs --sound",
+    "encode": "node render.mjs --encode"
+  },
+  "dependencies": {
+    "p5": "^2.3.3",
+    "p5.brush": "^2.2.3",
+    "puppeteer-core": "^25.11.0",
+    "tone": "^15.1.22"
+  }
+}
