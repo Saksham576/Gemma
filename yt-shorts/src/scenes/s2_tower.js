@@ -84,7 +84,7 @@
       [tFall + .9, 'dizzy'], [tRe + .2, 'confused', { lookX: .8, lookY: -.5 }], [tCatch, 'surprised', { lookY: -.8 }], [tCatch + .6, 'nervous', { lookX: .8, lookY: -.6 }]]);
     let pose = { ...mood };
     const holding = t < tPlace || t > tCatch;
-    if (holding) { pose.aL = pose.aR = 1.45 + .05 * Math.sin(t * 6); pose.dy = (pose.dy || 0) - .3; }             // on tiptoe, block overhead
+    if (holding) { pose.aL = pose.aR = 1.45 + .05 * Math.sin(t * TAU); pose.dy = (pose.dy || 0) - .3; }             // on tiptoe, block overhead
     if (t > tPlace - .3 && t < tPlace + .4) { pose.aR = lerp(1.45, .4, ease(seg(t, tPlace - .3, tPlace))); pose.rot = .12 * Math.sin(seg(t, tPlace - .3, tPlace + .4) * Math.PI); }
     if (t > 7.0 && t < tGold + .2) { pose.aR = lerp(.3, 1.1, ease(seg(t, 7.0, tGold - .3))); pose.dy = (pose.dy || 0) - .6 * Math.sin(seg(t, 7, tGold + .2) * Math.PI); pose.rot = .1; }
     if (t > tFall && t < tFall + .8) { pose.sq = (pose.sq || 0) + .3 * Math.sin(seg(t, tFall, tFall + .8) * Math.PI); pose.aL = pose.aR = -.6; }   // duck
@@ -98,7 +98,7 @@
     const top = stackAt(N, th);
     for (let i = 0; i <= N; i++) {
       let p, a = 0;
-      if (i === N && holding) { const hd = headTop(sxx, sy, U, pose); p = [sxx, hd[1] - BH / 2 - 14]; a = .05 * Math.sin(t * 6); }
+      if (i === N && holding) { const hd = headTop(sxx, sy, U, pose); p = [sxx, hd[1] - BH / 2 - 14]; a = .05 * Math.sin(t * TAU); }
       else if (i === N && t < tPlace + .25) { const k = ease(seg(t, tPlace - .3, tPlace + .25)), s = stackAt(N, th); p = arcPt([sxx, headTop(sxx, sy, U, pose)[1] - BH / 2 - 14], [s[0], s[1]], 90, k); a = lerp(0, s[2], k); }
       else if (t < tFall) { const s = stackAt(i, th); p = [s[0], s[1]]; a = s[2]; }
       else if (t < tRe) {   // falling: each block flies off the tower on an arc, top ones first, and bounces where it lands

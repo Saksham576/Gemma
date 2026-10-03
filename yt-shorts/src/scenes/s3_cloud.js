@@ -32,7 +32,7 @@
     boilSeed('ground');
     paint(rectPts(-300, G, W + 600, 900, 2), { wash: PAL.sap, fill: mixCol(PAL.sap, PAL.ink, .3), fillOp: 60, bleed: .05, tex: .6, ink: null });
     inkLine([[-200, G], [W / 2, G - 3], [W + 200, G + 1]], 1.2, PAL.ink, 'ink', .5);
-    for (let i = 0; i < 14; i++) { boilSeed('tuft' + i); const x = hash(i) * W, s = 6 * Math.sin(t * 2 + i); for (const k of [-1, 0, 1]) inkLine([[x + k * 8, G + 4], [x + k * 12 + s, G - 22 - 6 * hash(i + k)]], .7, mixCol(PAL.sap, PAL.ink, .4), 'inkfine', .4); }
+    for (let i = 0; i < 14; i++) { boilSeed('tuft' + i); const x = hash(i) * W, s = 6 * Math.sin(t * TAU / 2 + i); for (const k of [-1, 0, 1]) inkLine([[x + k * 8, G + 4], [x + k * 12 + s, G - 22 - 6 * hash(i + k)]], .7, mixCol(PAL.sap, PAL.ink, .4), 'inkfine', .4); }
     boilSeed('puddle');   // the puddle under Sak's spot, rippling in the rain
     paint(ellPts(X0 + 30, G + 16, 210, 26, 24, 2), { wash: mixCol(PAL.sky, PAL.ink, .15), washOp: 200, ink: PAL.ink, sw: .6 });
   }

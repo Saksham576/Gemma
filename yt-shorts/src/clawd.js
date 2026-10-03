@@ -255,7 +255,7 @@ function eye(e, s, u, o, sw) {
     paint(rectPts(-w / 2 * u + lx, -h / 2 * u + ly, w * u, h * u, u * .04), { wash: PAL.ink, ink: null });
     if (u > 9) paint(ellPts(lx - w * .18 * u, ly - h * .29 * u, u * .17 * w, u * .24 * w, 10), { wash: PAL.cream, washOp: 230, ink: null });
   };
-  const blinkOn = ['normal', 'look', 'wide'].includes(e) && ((T * .9 + (o.seed || 0) * 1.7) % 3.3) < .12;
+  const blinkOn = ['normal', 'look', 'wide'].includes(e) && ((T + 1.3 + (o.seed || 0) * 1.7) % (DUR / Math.max(1, Math.round(DUR / 3.6)))) < .12;   // the blink cycle divides the Short's length, so loops seam
   if (blinkOn) { inkLine([[-.7 * u, .5 * u], [.7 * u, .5 * u]], sw, PAL.ink, 'ink', 0); return; }
   const lineEye = (pts, w = 1.3, c = .2) => inkLine(pts.map(([a, b]) => [a * u, b * u]), sw * w, PAL.ink, 'ink', c);
   switch (e) {
@@ -619,7 +619,7 @@ function emotions(t, keys, o = {}) {
   cur.sq = (cur.sq || 0) + t1.sq + t2.sq; cur.dy = (cur.dy || 0) + t1.dy + t2.dy;
   cur.squint = squint;
   // the emote pops in after the swap (it carries on if the emote didn't change); one-off emotes fade out
-  const same = prev && prev.emote === cur.emote;
+  const same = !prev || prev.emote === cur.emote;   // the first key's emote is already showing (no pop at frame 0, so loops seam cleanly)
   cur.emoteK = same ? 1 : seg(age, .06, .32) * (E.fade && !(over && over.emote) ? 1 - seg(age, 1.4, 1.8) : 1);
   cur.emoteAge = age;
   return cur;

@@ -22,13 +22,13 @@
     boilSeed('window');   // a window over the counter: sky, a cloud drifting, the frame and its cross bars
     const WX = 600, WY = 700, WW = 380, WH = 340;
     paint(rrPts(WX - WW / 2, WY - WH / 2, WW, WH, 10), { wash: PAL.sky, fill: mixCol(PAL.sky, PAL.cream, .4), fillOp: 90, bleed: .1, tex: .5, ink: null });
-    paint(ellPts(WX - 60 + 30 * Math.sin(t * .3), WY - 60, 90, 34, 18, 3), { wash: PAL.cream, washOp: 230, ink: null });
+    paint(ellPts(WX - 60 + 30 * Math.sin(t * TAU / DUR), WY - 60, 90, 34, 18, 3), { wash: PAL.cream, washOp: 230, ink: null });
     paint(rrPts(WX - WW / 2, WY - WH / 2, WW, WH, 10), { ink: PAL.ink, sw: 1.4 });
     inkLine([[WX, WY - WH / 2], [WX, WY + WH / 2]], 1.6, PAL.ink, 'ink', 0); inkLine([[WX - WW / 2, WY], [WX + WW / 2, WY]], 1.6, PAL.ink, 'ink', 0);
     paint(rectPts(WX - WW / 2 - 30, WY + WH / 2, WW + 60, 26, 1), { wash: PAL.clayLt, ink: PAL.ink, sw: 1 });   // sill
     boilSeed('plant');   // a little potted plant on the sill, swaying
     paint(rrPts(WX + 110, WY + WH / 2 - 60, 70, 60, 8), { wash: PAL.rose, ink: PAL.ink, sw: .9 });
-    for (let k = -1; k <= 1; k++) inkLine([[WX + 145, WY + WH / 2 - 58], [WX + 145 + k * 34 + 6 * Math.sin(t * 2 + k), WY + WH / 2 - 120 - 20 * (k === 0)]], 2.4, PAL.sap, 'ink', .4);
+    for (let k = -1; k <= 1; k++) inkLine([[WX + 145, WY + WH / 2 - 58], [WX + 145 + k * 34 + 6 * Math.sin(t * TAU / 2 + k), WY + WH / 2 - 120 - 20 * (k === 0)]], 2.4, PAL.sap, 'ink', .4);
     boilSeed('counter');
     paint(rectPts(-200, G, W + 400, 900, 2), { wash: PAL.clay, fill: PAL.clayDk, fillOp: 70, bleed: .05, tex: .6, ink: null });
     paint(rectPts(-200, G - 8, W + 400, 34, 2), { wash: PAL.clayLt, ink: null });
