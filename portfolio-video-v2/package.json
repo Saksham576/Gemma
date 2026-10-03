@@ -1,0 +1,15 @@
+{
+  "name": "saksham-portfolio-reel-v2",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Saksham portfolio reel v2: one continuous take drawn by a single signal thread, with generated score and foley",
+  "scripts": {
+    "sheet": "node render.mjs --sheet=1,5,8,12,15,19,22,26,29 --out=out/check/sheet.jpg",
+    "build": "node render.mjs --frames && node render.mjs --audio && node render.mjs --encode"
+  },
+  "dependencies": {
+    "hersheytext": "^2.0.0",
+    "puppeteer-core": "^25.11.0",
+    "tone": "^15.1.22"
+  }
+}

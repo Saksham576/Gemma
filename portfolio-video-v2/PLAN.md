@@ -1,6 +1,6 @@
 # Portfolio reel v2: plan
 
-Status: **plan only**. Nothing is built yet.
+Status: **built** (2026-10-03). See README.md, STORYBOARD.md and `out/portfolio_v2.mp4`. Deviations from the plan: plain Canvas2D instead of Three.js (it renders in ~45 ms/frame on this CPU-only machine, so no on-twos compromise was needed), 30 fps on ones, and no motion-blur sub-samples (the signal's trail does that job).
 
 ## Decisions (answered 2026-10-03)
 

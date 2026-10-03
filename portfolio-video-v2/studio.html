@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Reel v2 studio</title>
+<style>
+  /* fonts are bundled (SIL OFL), so renders never depend on the network */
+  @font-face { font-family: 'Archivo'; src: url(assets/fonts/Archivo.woff2) format('woff2'); font-weight: 100 900; font-stretch: 62% 125%; font-display: block; }
+  @font-face { font-family: 'IBM Plex Mono'; src: url(assets/fonts/PlexMono-400.woff2) format('woff2'); font-weight: 400; font-display: block; }
+  @font-face { font-family: 'IBM Plex Mono'; src: url(assets/fonts/PlexMono-500.woff2) format('woff2'); font-weight: 500; font-display: block; }
+  @font-face { font-family: 'Cormorant Garamond'; src: url(assets/fonts/CormorantGaramond-Italic.woff2) format('woff2'); font-style: italic; font-weight: 500; font-display: block; }
+  html, body { margin: 0; background: #0A0A0B; color: #EEE9DF; font: 13px "IBM Plex Mono", monospace; }
+  main { padding: 12px; display: grid; gap: 8px; }
+  #out { width: min(100%, 1280px); aspect-ratio: 16 / 9; height: auto; }
+  .bar { display: flex; gap: 10px; align-items: center; max-width: 1280px; }
+  #scrub { flex: 1; }
+</style>
+</head>
+<body>
+<main>
+  <canvas id="out" width="1920" height="1080"></canvas>
+  <div class="bar"><button id="play">play</button><input id="scrub" type="range" min="0" max="30" step="0.0333" value="0"><span id="tt">loading…</span></div>
+</main>
+<script src="src/hershey.js"></script>
+<script src="src/core.js"></script>
+<script src="src/timeline.js"></script>
+<script src="src/field.js"></script>
+<script src="src/plates/p0_open.js"></script>
+<script src="src/plates/p1_tableproof.js"></script>
+<script src="src/plates/p2_pilgrim.js"></script>
+<script src="src/plates/p3_ultrahuman.js"></script>
+<script src="src/plates/p4_outro.js"></script>
+<script src="node_modules/tone/build/Tone.js"></script>
+<script src="src/score.js"></script>
+<script>
+  (async () => {
+    await Promise.all(['700 40px "Archivo"', '400 20px "IBM Plex Mono"', '500 20px "IBM Plex Mono"', 'italic 500 20px "Cormorant Garamond"'].map(f => document.fonts.load(f)));
+    setupCanvas();
+    window.renderAt = (t, type = 'image/jpeg', q = .94) => { renderFrame(t); return OUT.toDataURL(type, q); };
+    window.ready = true;
+    if (location.search.includes('render')) return;
+    // studio: scrub, or play in real time with the score (click play once to allow audio)
+    const s = document.getElementById('scrub'), lab = document.getElementById('tt');
+    const show = t => { const a = performance.now(); renderFrame(t); lab.textContent = `${t.toFixed(2)}s · ${Math.round(performance.now() - a)} ms`; };
+    s.oninput = () => show(+s.value);
+    show(+(new URLSearchParams(location.search).get('t') || 0));
+    let player = null;
+    document.getElementById('play').onclick = async () => {
+      if (!player) { const buf = await renderScore(); player = new Audio(URL.createObjectURL(new Blob([buf], { type: 'audio/wav' }))); }
+      player.currentTime = +s.value; player.play();
+      const tick = () => { if (player.paused) return; s.value = player.currentTime; show(player.currentTime); requestAnimationFrame(tick); }; tick();
+    };
+  })();
+</script>
+</body>
+</html>
