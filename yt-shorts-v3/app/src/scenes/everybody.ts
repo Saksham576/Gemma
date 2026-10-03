@@ -48,7 +48,7 @@ export default class Everybody extends Plate {
         const pop = clamp((t - t0) / 0.1);
         const hot = hash(i, j, 3) < 0.035;
         const blink = hot && hash(i, j, Math.floor(b * 4)) < 0.6;
-        c.fillStyle = blink ? rgba('signal', 1) : rgba('bone', lerp(0.75, 0.2, square) * pop);
+        c.fillStyle = blink ? rgba('signal', 1) : rgba('bone', lerp(0.75, 0.1, square) * pop);
         if (square > 0) {
           const s = PITCH * lerp(0.45, 0.82, square);
           c.beginPath(); c.roundRect(x - s / 2, y - s / 2, s, s, s * 0.18); c.fill();

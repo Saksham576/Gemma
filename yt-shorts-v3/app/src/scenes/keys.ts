@@ -53,12 +53,12 @@ export default class Keys extends Plate {
 
   draw(c: CanvasRenderingContext2D, f: Frame) {
     const t = f.t, b = this.lb(t), z = this.cam.zoom;
-    const fadeCrowd = 1 - clamp(b / 0.9);
+    const fadeCrowd = 1 - clamp(b / 0.6);
 
     // the crowd's leftover squares, fading as we dive
     if (fadeCrowd > 0) {
       const hw = W / 2 / z + PITCH, hh = H / 2 / z + PITCH;
-      c.fillStyle = rgba('bone', 0.2 * fadeCrowd);
+      c.fillStyle = rgba('bone', 0.07 * fadeCrowd);
       for (let j = Math.floor((this.cam.y - hh) / PITCH); j <= (this.cam.y + hh) / PITCH; j++)
         for (let i = Math.floor((this.cam.x - hw) / PITCH); i <= (this.cam.x + hw) / PITCH; i++) {
           if (j >= J0 && j < J0 + 4 && i >= I0 && i < I0 + 10) continue;
@@ -103,8 +103,8 @@ export default class Keys extends Plate {
     // the pill above the keyboard, filling with the spelled letters
     const kc = this.kc(), py = J0 * PITCH - 120;
     const ns = this.spell.filter((s) => t >= s.t).length;
-    if (b > 2.4) {
-      const a = clamp((b - 2.4) * 4);
+    if (b > 2.9) {
+      const a = clamp((b - 2.9) * 6);
       c.save(); c.globalAlpha = a;
       c.fillStyle = rgba('ink2', 0.95); c.strokeStyle = rgba('bone', 0.5); c.lineWidth = 2;
       c.beginPath(); c.roundRect(kc.x - 300, py - 44, 600, 88, 44); c.fill(); c.stroke();
