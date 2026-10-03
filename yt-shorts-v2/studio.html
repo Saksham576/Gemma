@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Kinetic Shorts studio</title>
+<style>
+  @font-face { font-family: 'Archivo'; src: url(assets/fonts/Archivo.woff2) format('woff2'); font-weight: 100 900; font-stretch: 62% 125%; font-display: block; }
+  @font-face { font-family: 'IBM Plex Mono'; src: url(assets/fonts/PlexMono-400.woff2) format('woff2'); font-weight: 400; font-display: block; }
+  @font-face { font-family: 'IBM Plex Mono'; src: url(assets/fonts/PlexMono-500.woff2) format('woff2'); font-weight: 500; font-display: block; }
+  @font-face { font-family: 'Cormorant Garamond'; src: url(assets/fonts/CormorantGaramond-Italic.woff2) format('woff2'); font-style: italic; font-weight: 500; font-display: block; }
+  html, body { margin: 0; background: #0A0A0B; color: #EEE9DF; font: 13px "IBM Plex Mono", monospace; }
+  main { padding: 12px; display: grid; gap: 8px; justify-items: start; }
+  #out { height: min(86vh, 960px); aspect-ratio: 9 / 16; width: auto; }
+  .bar { display: flex; gap: 10px; align-items: center; width: 540px; }
+  #scrub { flex: 1; }
+</style>
+</head>
+<body>
+<main>
+  <canvas id="out" width="1080" height="1920"></canvas>
+  <div class="bar"><button id="play">play</button><input id="scrub" type="range" min="0" max="24" step="0.0333" value="0"><span id="tt">loading…</span></div>
+</main>
+<script src="src/config.js"></script>
+<script src="src/hershey.js"></script>
+<script src="src/core.js"></script>
+<script src="node_modules/tone/build/Tone.js"></script>
+<script src="src/kinetic.js"></script>
+<script src="src/music.js"></script>
+<!-- the three Shorts: each one only sets itself up when it is the selected SHORT -->
+<script src="src/shorts/a_3am.js"></script>
+<script src="src/shorts/b_prompt.js"></script>
+<script src="src/shorts/c_last10.js"></script>
+<script>
+  (async () => {
+    await Promise.all(['800 40px "Archivo"', '400 20px "IBM Plex Mono"', '500 20px "IBM Plex Mono"'].map(f => document.fonts.load(f)));
+    setupCanvas();
+    window.renderAt = (t, type = 'image/jpeg', q = .94) => { renderFrame(t); return OUT.toDataURL(type, q); };
+    window.ready = true;
+    if (location.search.includes('render')) return;
+    const s = document.getElementById('scrub'), lab = document.getElementById('tt');
+    const show = t => { renderFrame(t); lab.textContent = `${SHORT} · ${t.toFixed(2)}s`; };
+    s.oninput = () => show(+s.value); show(+(new URLSearchParams(location.search).get('t') || 0));
+    let player = null;
+    document.getElementById('play').onclick = async () => {
+      if (!player) { const st = await renderStems(); player = new Audio('data:audio/wav;base64,' + st.mix); }
+      player.currentTime = +s.value; player.play();
+      const tick = () => { if (player.paused) return; s.value = player.currentTime; show(player.currentTime); requestAnimationFrame(tick); }; tick();
+    };
+  })();
+</script>
+</body>
+</html>
