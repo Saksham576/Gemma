@@ -1,6 +1,14 @@
 # Portfolio reel v2: plan
 
-Status: **plan only**. Nothing is built yet. Building waits for answers to the four questions at the end of the chat message.
+Status: **plan only**. Nothing is built yet.
+
+## Decisions (answered 2026-10-03)
+
+- **Style:** technical treatise. Ink `#0A0A0B` / panel `#151517` / bone paper `#EEE9DF`, one hazard-orange signal `#FF4D12` (ember `#FF8A3D`), plotter hairlines, Archivo for display, IBM Plex Mono for data, light 3D wireframes only. No mascot.
+- **Sound:** a score and foley generated in code from the animation's own cue timeline (section 3).
+- **Length:** ~30 s, a seamless loop (last frame = first frame).
+- **End plate:** "Saksham", plus `TableProof · Pilgrim · Ultrahuman`. No contact details.
+- **Delivery:** `portfolio-video-v2/` on `claude/clever-fermat-jy52f7`; v1 stays as it is; no PR unless asked.
 
 ## 1. What I analysed, and how
 
