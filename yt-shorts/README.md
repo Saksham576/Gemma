@@ -30,7 +30,7 @@ node render.mjs --short=tower --encode                      # → out/tower/towe
 python3 scripts/check_audio.py out/tower/sfx.wav out/tower/cues.json
 ```
 
-On a machine without a GPU, add `--soft-gl` (and `--chrome=<path>` if Chrome isn't found).
+On Windows with a GPU, `powershell -ExecutionPolicy Bypass -File yt-shorts\render-local.ps1` renders everything with full watercolour. On a machine without a GPU, add `--soft-gl` (and `--chrome=<path>` if Chrome isn't found).
 
 ## Credits
 
