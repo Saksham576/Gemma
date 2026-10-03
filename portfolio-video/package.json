@@ -1,0 +1,17 @@
+{
+  "name": "saksham-portfolio-video",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Saksham portfolio reel, hand-painted in p5.brush on the ClaudeAnimationBase kit",
+  "scripts": {
+    "sheet": "node render.mjs --sheet=1,3,6,8,11,13,16,19 --cols=4 --w=480 --out=out/check/sheet.jpg",
+    "frames": "node render.mjs --frames --twos --workers=3",
+    "video": "node render.mjs --encode --out=out/portfolio.mp4"
+  },
+  "dependencies": {
+    "p5": "^2.3.3",
+    "p5.brush": "^2.2.3",
+    "puppeteer-core": "^25.11.0"
+  }
+}
