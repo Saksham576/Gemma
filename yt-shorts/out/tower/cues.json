@@ -1,0 +1,130 @@
+[
+ {
+  "t": 0.25,
+  "kind": "slideDown"
+ },
+ {
+  "t": 0.8,
+  "kind": "sweat"
+ },
+ {
+  "t": 1.25,
+  "kind": "slideDown"
+ },
+ {
+  "t": 2.75,
+  "kind": "clack"
+ },
+ {
+  "t": 3,
+  "kind": "slideUp"
+ },
+ {
+  "t": 3.7,
+  "kind": "slideDown"
+ },
+ {
+  "t": 5.2,
+  "kind": "puff"
+ },
+ {
+  "t": 5.6,
+  "kind": "ding"
+ },
+ {
+  "t": 8,
+  "kind": "clack"
+ },
+ {
+  "t": 8.1,
+  "kind": "sparkle"
+ },
+ {
+  "t": 9,
+  "kind": "buzz"
+ },
+ {
+  "t": 12,
+  "kind": "crash"
+ },
+ {
+  "t": 12.02,
+  "kind": "whoosh"
+ },
+ {
+  "t": 12.1,
+  "kind": "buzz"
+ },
+ {
+  "t": 12.74,
+  "kind": "thud"
+ },
+ {
+  "t": 12.75,
+  "kind": "thud"
+ },
+ {
+  "t": 12.76,
+  "kind": "thud"
+ },
+ {
+  "t": 12.77,
+  "kind": "thud"
+ },
+ {
+  "t": 12.78,
+  "kind": "thud"
+ },
+ {
+  "t": 12.79,
+  "kind": "thud"
+ },
+ {
+  "t": 12.8,
+  "kind": "thud"
+ },
+ {
+  "t": 12.9,
+  "kind": "sad"
+ },
+ {
+  "t": 14,
+  "kind": "clack"
+ },
+ {
+  "t": 14.4,
+  "kind": "clack"
+ },
+ {
+  "t": 14.8,
+  "kind": "clack"
+ },
+ {
+  "t": 15.2,
+  "kind": "clack"
+ },
+ {
+  "t": 15.6,
+  "kind": "clack"
+ },
+ {
+  "t": 16,
+  "kind": "clack"
+ },
+ {
+  "t": 16.4,
+  "kind": "pop"
+ },
+ {
+  "t": 17.25,
+  "kind": "slideDown"
+ },
+ {
+  "t": 18.25,
+  "kind": "slideDown"
+ },
+ {
+  "t": 19.25,
+  "kind": "slideDown"
+ }
+]

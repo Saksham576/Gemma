@@ -1,0 +1,122 @@
+[
+ {
+  "t": 0,
+  "kind": "rain"
+ },
+ {
+  "t": 0.3,
+  "kind": "drip"
+ },
+ {
+  "t": 0.5700000000000001,
+  "kind": "drip"
+ },
+ {
+  "t": 0.8400000000000001,
+  "kind": "drip"
+ },
+ {
+  "t": 1.11,
+  "kind": "drip"
+ },
+ {
+  "t": 1.3800000000000001,
+  "kind": "drip"
+ },
+ {
+  "t": 1.6500000000000001,
+  "kind": "drip"
+ },
+ {
+  "t": 2,
+  "kind": "whoosh"
+ },
+ {
+  "t": 2.5,
+  "kind": "slideDown"
+ },
+ {
+  "t": 3.3,
+  "kind": "whoosh"
+ },
+ {
+  "t": 3.9,
+  "kind": "slideDown"
+ },
+ {
+  "t": 4.6,
+  "kind": "boing"
+ },
+ {
+  "t": 5.4,
+  "kind": "pop"
+ },
+ {
+  "t": 6.6,
+  "kind": "whoosh"
+ },
+ {
+  "t": 6.8999999999999995,
+  "kind": "rain"
+ },
+ {
+  "t": 7,
+  "kind": "sad"
+ },
+ {
+  "t": 8.3,
+  "kind": "thud"
+ },
+ {
+  "t": 8.6,
+  "kind": "ding"
+ },
+ {
+  "t": 9.4,
+  "kind": "step"
+ },
+ {
+  "t": 9.5,
+  "kind": "drip"
+ },
+ {
+  "t": 10.2,
+  "kind": "grow"
+ },
+ {
+  "t": 12,
+  "kind": "bloom"
+ },
+ {
+  "t": 12.1,
+  "kind": "sparkle"
+ },
+ {
+  "t": 13.4,
+  "kind": "slideUp"
+ },
+ {
+  "t": 15.4,
+  "kind": "puff"
+ },
+ {
+  "t": 15.8,
+  "kind": "puff"
+ },
+ {
+  "t": 16.08,
+  "kind": "achoo"
+ },
+ {
+  "t": 16.5,
+  "kind": "puff"
+ },
+ {
+  "t": 17.2,
+  "kind": "slideDown"
+ },
+ {
+  "t": 17.599999999999998,
+  "kind": "rain"
+ }
+]
