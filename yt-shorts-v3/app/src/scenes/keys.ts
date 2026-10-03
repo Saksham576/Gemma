@@ -120,8 +120,8 @@ export default class Keys extends Plate {
     this.screen(c);
     const fam = F.archivo(125, 900);
     const s1 = fitSize('CLACK', fam, 840, 380);
-    slam(c, 'CLICK', t, T_CLICK, W / 2, 470, { fam, size: s1, out: this.bt(2.9) });
-    slam(c, 'CLACK', t, T_CLACK, W / 2, 470 + s1 * 0.95, { fam, size: s1, col: 'signal', out: this.bt(2.9) });
+    slam(c, 'CLICK', t, T_CLICK, W / 2, 470, { fam, size: s1, out: this.bt(2.6) });
+    slam(c, 'CLACK', t, T_CLACK, W / 2, 470 + s1 * 0.95, { fam, size: s1, col: 'signal', out: this.bt(2.6) });
     this.world(c);
 
     let hit = 0;

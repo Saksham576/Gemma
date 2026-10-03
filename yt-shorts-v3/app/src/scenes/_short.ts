@@ -47,7 +47,8 @@ void main() {
   vec3 col = mix(ink, pap, paper);
   vec2 g = mod(q + 24.0, 48.0) - 24.0;
   float dotm = smoothstep(2.2, 0.8, length(g) * cam.z);
-  col = mix(col, mix(C_GRAPHITE * 0.9, C_ASH * 0.55, paper), dotm * grid * 0.5);
+  // zoomed far out the dots would merge into a grey wall: fade them with the zoom
+  col = mix(col, mix(C_GRAPHITE * 0.9, C_ASH * 0.55, paper), dotm * grid * 0.5 * smoothstep(0.3, 0.75, cam.z));
   col += C_SIGNAL * glow.z * exp(-length(q - glow.xy) / 300.0) * mix(0.55, 0.25, paper);
   // the UI layer, radially blurred toward the centre on punch-ins
   vec4 u = tap(p);
@@ -65,7 +66,8 @@ void main() {
   // orange glows: saturated warm pixels go HDR so the bloom picks them up
   float warm = sat((uc.r - uc.b) * 1.6) * sat(uc.r * 1.4 - 0.2);
   uc *= 1.0 + hot * warm * 2.6;
-  col = mix(col, uc, u.a);
+  // blend in sRGB like Canvas2D does: in linear light a 2% white square on black reads as mid grey
+  col = toLinear(mix(toSRGB(max(col, 0.0)), toSRGB(uc), u.a));
   fragColor = vec4(col, 1.0);
 }`;
 
@@ -149,7 +151,11 @@ export abstract class Plate extends Scene {
     u.glow!.value = L.glow ?? [0, 0, 0];
     this.pass.render(this.ctx.renderer, out);
     if (this.fx.count) this.fx.render(this.ctx.renderer, out);
-    return { hud: 0, grain: 0.06, ca: 1.6, vignette: 0.4, paper: L.paper ?? 0, ...(r.post ?? {}) };
+    // bloom threshold above bone white: only the boosted orange glows (white type would haze the whole frame)
+    // plates give flashes as perceived (sRGB) amounts; the engine adds them in linear light
+    const post = { ...(r.post ?? {}) };
+    if (post.flash) post.flash = Math.pow(clamp(post.flash), 2.2);
+    return { hud: 0, grain: 0.06, ca: 1.6, vignette: 0.4, bloomThreshold: 1.05, paper: L.paper ?? 0, ...post };
   }
 }
 
